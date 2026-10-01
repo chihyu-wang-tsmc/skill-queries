@@ -1,0 +1,188 @@
+{
+  "skill": "xlsx",
+  "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:32:39+00:00",
+  "scenarios": [
+    {
+      "id": "xlsx-01",
+      "scenario": "A financial analyst has raw annual revenue and expense figures and needs a formatted three-statement financial model saved as a workbook with standard financial styling.",
+      "user_query": "Can you build a DCF and 3-statement model in financial_model.xlsx using standard financial modeling conventions, with blue font for hardcoded inputs and proper currency formatting?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-02",
+      "scenario": "An operations manager received an unformatted text dump of quarterly regional shipments and needs a calculation tool to compute totals and averages by region.",
+      "user_query": "I have raw shipment records from Q1 through Q4 across our four regions. I need a clean spreadsheet where I can see total volume and average shipping delay per region with live formulas.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-03",
+      "scenario": "A marketing coordinator downloaded raw lead metrics as a CSV file and needs to convert it into a styled Excel workbook with cost-per-lead calculations.",
+      "user_query": "Take campaign_leads.csv from my workspace and convert it to an .xlsx workbook. Add a Cost Per Lead column calculating Spend / Leads formatted as currency.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-04",
+      "scenario": "A retail store manager has daily sales tallies across three branches and wants an integrated file that aggregates totals dynamically.",
+      "user_query": "I've got three daily sales logs from Downtown, Northside, and West End. Please consolidate them into one file with a summary tab that pulls each store's total and calculates our combined revenue.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-05",
+      "scenario": "An internal auditor is reviewing an existing macro-enabled corporate audit sheet and needs formula totals updated without stripping the embedded VBA code.",
+      "user_query": "I need to add summary sum rows to the bottom of the audit tabs in q3_audit.xlsm. Please make sure the macros stay intact when saving it back out.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-06",
+      "scenario": "An HR director needs a hiring budget template for team leads to input expected salaries and calculate automated bonus pools and payroll taxes.",
+      "user_query": "I need a staffing planner file where department heads can plug in base salaries, and it should automatically compute a 15% bonus accrual, 7.65% FICA, and total cost per hire.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-07",
+      "scenario": "A data analyst has a TSV file with irregular header offsets and blank rows that needs to be cleaned and saved as a structured spreadsheet.",
+      "user_query": "Clean up messy_metrics.tsv—fix the misplaced column headers and remove junk trailing rows—then save the cleaned table as cleaned_metrics.xlsx.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-08",
+      "scenario": "A commercial real estate investor wants a dynamic acquisition model to calculate net operating income and cap rate based on adjustable assumptions.",
+      "user_query": "Create an investment analysis sheet where I can enter purchase price, gross rent, vacancy rate, and operating expenses to automatically see Net Operating Income and Cap Rate.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-09",
+      "scenario": "A supply chain lead opened an existing vendor scorecard workbook and found multiple formula errors (#NAME? and #VALUE!) that need fixing.",
+      "user_query": "The vendor_scorecard.xlsx file has broken formulas throwing #NAME? and #VALUE! errors across columns D and E. Can you inspect the formulas, fix the references, and verify the calculations?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-10",
+      "scenario": "An event coordinator is tracking banquet expenses and needs an expense breakdown where line items are totaled by category.",
+      "user_query": "Here is a list of quotes from caterers, AV rental, and venue decor. Please structure this into a budget tracker with auto-summing subtotals for each vendor category.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-11",
+      "scenario": "A corporate budget analyst is having issues with cross-tab references in an existing budget tracking workbook because tab names contain spaces.",
+      "user_query": "In budget_vs_actual.xlsx, write formulas on the Summary tab that pull totals from 'Q1 Actuals' and 'Q2 Actuals' without causing syntax errors.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-12",
+      "scenario": "A medical clinic administrator needs to track physician on-call hours and compute regular vs overtime hours per doctor each week.",
+      "user_query": "I have the weekly shift logs for our doctors. Please generate an on-call tracking sheet that calculates standard hours, hours over 40 as overtime, and total weekly payout per physician.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-13",
+      "scenario": "A sales operations specialist needs to format an existing deal pipeline file to make deal stages and dollar figures easy to read for executives.",
+      "user_query": "Open pipeline_export.xlsx, apply $#,##0 currency formatting to the Deal Value column, center the stage names, and make header rows dark blue with bold white Arial text.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-14",
+      "scenario": "A non-profit treasurer needs an annual financial summary splitting restricted grant funds and general donations with dynamic balance totals.",
+      "user_query": "I have raw ledger entries for our non-profit. I need a financial report file showing restricted versus unrestricted fund balances with formulas showing remaining grant balances.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-15",
+      "scenario": "A product manager wants a backlog prioritization grid in an Excel sheet that uses INDEX/MATCH formulas to pull developer capacity constraints.",
+      "user_query": "Build a feature prioritization matrix in backlog_roi.xlsx that ranks user stories by value and uses INDEX and MATCH formulas to pull sprint capacity from the Team tab.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-16",
+      "scenario": "A freelance consultant wants an invoice and billing record where logged hours across monthly tabs aggregate to an annual summary.",
+      "user_query": "Create an invoice tracking file for my consulting business with 12 monthly tabs for hours logged and a master tab that sums up total billings, payments received, and outstanding balances.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-17",
+      "scenario": "A laboratory technician has twelve separate monthly experiment result CSV files and wants them combined into a multi-tab workbook.",
+      "user_query": "I have 12 files from jan_trials.csv to dec_trials.csv. Merge them into a single workbook named annual_trials.xlsx where each month is its own separate worksheet.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-18",
+      "scenario": "An e-commerce seller needs a unit economics calculator to check profitability after platform fees, shipping costs, and advertising costs.",
+      "user_query": "I need a product pricing sheet where I input retail price, manufacturing cost, shipping, and ad spend per unit, and it calculates gross margin percentage and net profit per item.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-19",
+      "scenario": "An investment banking junior needs a leveraged buyout return summary model built in an Excel spreadsheet with clearly labeled assumptions.",
+      "user_query": "Please generate lbo_returns.xlsx containing an entry/exit multiple matrix and debt paydown schedule, making sure key assumption inputs have a yellow background.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-20",
+      "scenario": "A general contractor needs to calculate bids by multiplying labor hours and material quantities against unit prices with an added contingency percentage.",
+      "user_query": "I have material costs and labor estimates for a renovation project. Set up an estimation file where quantity times unit price calculates line costs, subtotaling trades with a 10% contingency buffer on top.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-21",
+      "scenario": "A data engineer has a raw warehouse export CSV with unformatted numbers and timestamps that needs to be turned into a clean spreadsheet.",
+      "user_query": "Convert warehouse_dump.csv into a clean .xlsx file, format the dates as YYYY-MM-DD, round numeric quantities to whole integers, and auto-fit all column widths.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-22",
+      "scenario": "A college professor needs a grade calculation sheet that computes weighted category scores (homework, midterms, final exam) into final percentages.",
+      "user_query": "Here are my student assignment grades across four sections. Can you build a gradebook file where homework is 30%, midterm is 30%, and final exam is 40%, outputting final weighted percentages?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-23",
+      "scenario": "A compliance analyst modified several formulas in an Excel sheet and needs to verify that the workbook recalculates properly without hidden calculation errors.",
+      "user_query": "I edited the risk formulas in kyc_records.xlsx. Can you recalculate the entire workbook and confirm there are zero formula errors across all sheets?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-24",
+      "scenario": "A restaurant chef wants a recipe costing guide that references ingredient prices from an inventory list to compute cost per serving.",
+      "user_query": "I want a recipe costing workbook where each dish tab looks up ingredient unit prices from an Inventory Master tab and calculates food cost per portion.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-25",
+      "scenario": "A talent acquisition manager has an applicant workbook and wants a summary tab created with count formulas aggregating candidates by department and hiring stage.",
+      "user_query": "In candidates_2024.xlsx, add a Summary tab that uses COUNTIFS formulas to count how many candidates are in 'Interview', 'Offer', and 'Hired' stages for each department.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-26",
+      "scenario": "A SaaS startup founder needs a customer cohort retention grid calculating monthly churn and recurring revenue expansion over a 12-month period.",
+      "user_query": "Please create a cohort retention model where each signup month is a row, showing customer counts and active MRR decay month-over-month across columns with automated retention % formulas.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-27",
+      "scenario": "An inventory clerk needs to populate an existing Excel template file with May stock counts and save the result as a new monthly report.",
+      "user_query": "Take the template sku_template.xltx, fill in the May inventory counts from may_counts.csv, and save the populated spreadsheet as inventory_may.xlsx.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-28",
+      "scenario": "A fleet supervisor has fuel logs and odometer readings from company vans and needs a summary calculating miles per gallon and cost per mile.",
+      "user_query": "I have gas receipts and start/end mileage logs for 15 delivery vans last month. Generate a vehicle efficiency report that computes total miles driven, MPG, and fuel cost per mile per van.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "xlsx-29",
+      "scenario": "A portfolio manager has a spreadsheet that lost its linked external file references and needs the formula errors resolved and external dependencies detached.",
+      "user_query": "The portfolio_performance.xlsx file has broken external references like '[1]Returns Analysis'. Can you replace those broken links with their last known values and clean up the sheet?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "xlsx-30",
+      "scenario": "A gym owner wants a monthly membership tracker that calculates active member counts, churn rate, and monthly recurring subscription revenue.",
+      "user_query": "I have a list of gym members with their plan types ($49 basic, $89 premium) and join/cancel dates. I need a membership tracker that computes active members and monthly subscription revenue over time.",
+      "explicitness": "implicit"
+    }
+  ]
+}

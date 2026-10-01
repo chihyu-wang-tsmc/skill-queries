@@ -1,0 +1,188 @@
+{
+  "skill": "slack-gif-creator",
+  "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:32:20+00:00",
+  "scenarios": [
+    {
+      "id": "slack-gif-creator-01",
+      "scenario": "A product manager wants to celebrate a major feature release by adding a custom animated celebration badge to their team's Slack workspace.",
+      "user_query": "Can you generate a 128x128 animated GIF of a golden party popper with colorful confetti shooting out for a Slack emoji?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-02",
+      "scenario": "A DevOps engineer needs an animated indicator for their build bot to show that a deployment pipeline is actively running.",
+      "user_query": "I need a smooth looping animation of two interlocking mechanical gears spinning continuously on a dark slate background.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-03",
+      "scenario": "An HR coordinator wants a lively reaction emoji for peer appreciation messages in their company Slack channel.",
+      "user_query": "Make me a Slack emoji GIF of a pink heart that does a double-pulse heartbeat rhythm with a subtle glow.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-04",
+      "scenario": "An incident commander wants a visual alert icon for urgent P0 outages posted in triage channels.",
+      "user_query": "Create an animated flashing red siren beacon that shakes slightly while rotating its light beam.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-05",
+      "scenario": "A software engineer has a custom GIF that Slack rejected due to size limits and needs it optimized and validated.",
+      "user_query": "I made 'deploy_fail.gif' for a Slack reaction, but Slack says the file size is too large. Can you optimize the palette and validate it for Slack emoji upload?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-06",
+      "scenario": "A community manager wants a friendly greeting graphic for automated onboarding messages.",
+      "user_query": "I need a cute animation of a yellow hand waving back and forth with a slight elastic bounce at the edges.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-07",
+      "scenario": "A sales director wants a celebratory reaction icon to react to closed deals in the team channel.",
+      "user_query": "Generate a Slack GIF of a green dollar bill vibrating with little gold sparkles bursting outward.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-08",
+      "scenario": "A scrum master needs a visual timer animation to nudge teammates to wrap up their standup updates.",
+      "user_query": "Could you create an animated clock face where the red minute hand rapidly ticks around 360 degrees in a smooth loop?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-09",
+      "scenario": "A tech lead wants a distinctive approval stamp for PR reviews posted into the development Slack room.",
+      "user_query": "Create a 128x128 Slack reaction GIF with bold green text 'LGTM' that slams down into frame with a heavy bounce landing.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-10",
+      "scenario": "An office manager wants a cozy morning reaction icon for the watercooler chat.",
+      "user_query": "I want an animated pixel-style coffee mug with swirling steam rising and fading out at the top.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-11",
+      "scenario": "A QA tester uploaded a bug illustration and wants it converted into an animated Slack emoji for ticket tracking.",
+      "user_query": "Take this uploaded 'bug_icon.png' and create a Slack emoji GIF where it shakes violently side to side like it's panicking.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-12",
+      "scenario": "A customer support lead wants an achievement visual when the team reaches zero unanswered tickets.",
+      "user_query": "I need an animation of an inbox tray that has paperwork sliding out and disappearing, ending with a shiny green checkmark popping up.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-13",
+      "scenario": "A marketing specialist wants an eye-catching announcement banner GIF for their internal company Slack channel.",
+      "user_query": "Make a 480x480 message GIF for Slack featuring a megaphone sliding in from the left with pulsing sound waves emitting from it.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-14",
+      "scenario": "A developer wants a spinning loading graphic to use as an animated status icon in chat.",
+      "user_query": "Please build a 10-frame looping animation of a multi-colored gradient ring spinning clockwise.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-15",
+      "scenario": "An engineering manager wants a shiny star animation to reward teammates during weekly demo day shoutouts.",
+      "user_query": "Generate a Slack-ready emoji GIF of a 5-pointed gold star that rotates slowly while pulsing in size.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-16",
+      "scenario": "A recruiter wants to celebrate new candidate acceptances in the hiring updates feed.",
+      "user_query": "Can you make an animated graphic of a fountain pen signing a contract with a burst of tiny stars appearing when the signature finishes?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-17",
+      "scenario": "A growth hacker wants a high-energy rocket animation to post whenever daily active users hit a milestone.",
+      "user_query": "Create an animated GIF optimized for Slack showing a rocket blasting off vertically with flame particles spraying out the bottom.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-18",
+      "scenario": "A customer success manager wants a firefighting animation for when critical support tickets are resolved.",
+      "user_query": "Make a small looping animation of a red fire extinguisher spraying a cloud of white foam that expands and dissolves.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-19",
+      "scenario": "A workspace administrator wants to verify if a folder of custom GIFs meets all Slack emoji constraints.",
+      "user_query": "Check if 'thumbs_dance.gif' in my workspace conforms to Slack's emoji specs for dimensions, duration, and color count.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-20",
+      "scenario": "A frontend designer wants an interactive toggle animation to demonstrate UI states in design team discussions.",
+      "user_query": "Create an animated pill toggle switch that slides smoothly from left (gray) to right (vibrant blue) using ease-out interpolation.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-21",
+      "scenario": "A social committee lead wants a fun food reaction icon for ordering team Friday lunches on Slack.",
+      "user_query": "Can you make a Slack emoji GIF of a pizza slice spinning 360 degrees with dripping melted cheese?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-22",
+      "scenario": "A security analyst wants an alert visual to accompany automated vulnerability disclosure notices.",
+      "user_query": "I need an animation of a silver padlock that starts open, then snaps shut abruptly with a subtle screen shake.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-23",
+      "scenario": "A data engineer wants a graphic illustrating heavy server load when batch processing kicks off.",
+      "user_query": "Build a Slack-compatible GIF of a tiny brown hamster running frantically inside an animated spinning wheel.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-24",
+      "scenario": "A project coordinator wants an animated visual showing progress across sprint milestones.",
+      "user_query": "Can you generate an animation where a horizontal progress bar fills up smoothly from 0% to 100% with a glowing front tip?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-25",
+      "scenario": "An internal tools developer created a script outputting raw image frames and needs them assembled into an optimized Slack GIF.",
+      "user_query": "I generated 15 PIL frames in Python. How do I compile them into a 128x128 GIF using 48 colors optimized for Slack emoji?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-26",
+      "scenario": "A technical writer wants an animated search graphic to highlight newly published documentation.",
+      "user_query": "Create a smooth animation of a magnifying glass scanning diagonally across a document with little blue sparkle accents.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-27",
+      "scenario": "A team lead wants a vibrant celebratory burst GIF for acknowledging project completion in their department Slack.",
+      "user_query": "Make a Slack GIF of a central explosion with 20 multi-colored particles radiating outward and fading to transparent.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-28",
+      "scenario": "A workplace experience coordinator uploaded the company logo and wants an animated badge for anniversary reactions.",
+      "user_query": "Here is 'acme_logo.png'. Can you make it zoom in from 20% to full size with a bouncy elastic finish for our Slack emoji collection?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "slack-gif-creator-29",
+      "scenario": "A gaming club organizer wants a glowing retro sign to react to match wins in their company leisure channel.",
+      "user_query": "I need a dark square animation with neon cyan and magenta text 'GG' that flickers like a faulty neon tube sign.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "slack-gif-creator-30",
+      "scenario": "A sysadmin wants an urgent warning GIF to accompany scheduled database maintenance alerts.",
+      "user_query": "Generate a 480x480 Slack message GIF showing a yellow hazard triangle with an exclamation mark pulsing rapidly against a diagonal-striped background.",
+      "explicitness": "explicit"
+    }
+  ]
+}

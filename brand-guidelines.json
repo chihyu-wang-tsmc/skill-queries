@@ -1,0 +1,188 @@
+{
+  "skill": "brand-guidelines",
+  "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:31:20+00:00",
+  "scenarios": [
+    {
+      "id": "brand-guidelines-01",
+      "scenario": "A product marketer at Anthropic is building an external presentation in HTML/CSS and needs the exact corporate hex codes and font pairings.",
+      "user_query": "Can you give me Anthropic's official color palette and typography rules? I need the exact hex values and font families for headings and body text so I can style our landing page mockup.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-02",
+      "scenario": "A front-end developer is creating a dashboard component and needs to ensure the UI matches Anthropic's brand aesthetics.",
+      "user_query": "I'm styling a dashboard widget for an internal demo. What are our primary dark and light background colors, plus the secondary accent colors according to our brand guidelines?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-03",
+      "scenario": "A graphic designer is preparing a visual infographic and wants to style three distinct feature cards using official brand accents.",
+      "user_query": "I need three distinct accent colors that follow Anthropic brand identity to color-code three comparison cards in my infographic.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-04",
+      "scenario": "A developer is writing a Python script using python-pptx to generate slides and wants the slide theme to adhere strictly to Anthropic's visual guidelines.",
+      "user_query": "I am generating a PowerPoint presentation using python-pptx. Can you provide the RGBColor specifications and font hierarchy for Anthropic branded decks?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-05",
+      "scenario": "A developer building a documentation theme needs CSS variables configured with Anthropic's exact typography and color palette.",
+      "user_query": "Generate a CSS root variables stylesheet using Anthropic's brand guidelines, including heading/body fonts with fallbacks and all primary and accent hex codes.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-06",
+      "scenario": "A research engineer is putting together a research paper summary PDF and wants it to look like an official Anthropic publication.",
+      "user_query": "I'm compiling a PDF summary of our latest model findings. Make sure it follows Anthropic's corporate identity standards for typography and text colors.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-07",
+      "scenario": "A marketing specialist is creating an email newsletter template and needs to align the text styling with company branding.",
+      "user_query": "What font families and fallbacks should I specify in my HTML email template to conform to Anthropic brand styling for headers versus paragraph text?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-08",
+      "scenario": "A designer is setting up a Tailwind CSS config for an Anthropic web application.",
+      "user_query": "Please generate a tailwind.config.js theme extension that incorporates Anthropic's official brand colors (dark, light, grays, orange, blue, green) and font pairings (Poppins/Lora).",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-09",
+      "scenario": "A technical writer is styling an SVG architecture diagram to match Anthropic's company brand standards.",
+      "user_query": "I have an SVG diagram with several node boxes. Which Anthropic brand accent colors should I use for highlight strokes and badges?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-10",
+      "scenario": "An event coordinator is ordering stage backdrop assets and needs the precise color codes approved by Anthropic brand management.",
+      "user_query": "I'm submitting color specs to the print vendor for conference banners. Please list the exact hex codes for Anthropic's main dark, light, mid gray, light gray, and primary orange accent.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-11",
+      "scenario": "A UX designer is setting up a design token JSON file for Anthropic's design system.",
+      "user_query": "Can you generate a design-tokens.json file documenting Anthropic's visual identity palette (main and accent colors) along with font families and fallback definitions?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-12",
+      "scenario": "A developer is generating a customer-facing report in Matplotlib and wants the chart styling to reflect Anthropic corporate colors.",
+      "user_query": "How do I configure Matplotlib rcParams to use Anthropic's official brand colors (#141413, #faf9f5, accents #d97757, #6a9bcc, #788c5d) and Poppins font?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-13",
+      "scenario": "A communications lead is reviewing a draft slide deck and wants to ensure all headers and body fonts follow company guidelines.",
+      "user_query": "Can you check the typography rules in Anthropic brand guidelines? What font is mandated for headings over 24pt and what should be used for body text?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-14",
+      "scenario": "A web designer is creating a dark-mode banner and needs to know the correct background and foreground color pairings from Anthropic's style guide.",
+      "user_query": "What are Anthropic's designated dark and light color codes for high-contrast dark-themed visual assets?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-15",
+      "scenario": "A product team member is building an interactive demo site and wants to confirm the tertiary accent color in the Anthropic design system.",
+      "user_query": "What is the official tertiary accent color in the Anthropic brand identity, and what hex code should I use for success badges?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "brand-guidelines-16",
+      "scenario": "A developer has built a barebones HTML table comparing model benchmarks and wants it styled to look like an official company asset.",
+      "user_query": "Here's my raw HTML table of benchmark scores. Can you style it so it looks clean, elegant, and perfectly on-brand for Anthropic?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-17",
+      "scenario": "A product manager is preparing an investor update slide and needs the raw text formatted with company-appropriate visual hierarchy and aesthetics.",
+      "user_query": "I drafted this 3-bullet executive summary for leadership. Please format it with our company's standard look-and-feel, typography, and accent highlights.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-18",
+      "scenario": "A data scientist generated a seaborn chart for an external blog post and wants the visual theme customized to match company style.",
+      "user_query": "I have this seaborn bar plot comparing inference latency across models. Could you restyle the palette and typography so it fits seamlessly into our public corporate blog?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-19",
+      "scenario": "A sales engineer is drafting a one-page technical solution overview in Markdown/HTML for an enterprise client.",
+      "user_query": "Turn this raw markdown pitch into a polished one-page HTML document that matches the official visual styling and color scheme of our company.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-20",
+      "scenario": "A developer is writing a script that outputs automated weekly metric reports as styled HTML emails.",
+      "user_query": "I need inline CSS for our automated alert emails. They should look completely native to our company identity with warm dark text, clean background, and subtle accent pills.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-21",
+      "scenario": "A technical writer created an API reference cheat sheet and wants to apply corporate color accents to method badges (GET, POST, DELETE).",
+      "user_query": "I'm making an API reference card. Can you give me three harmonized brand accent colors to differentiate GET, POST, and DELETE endpoints?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-22",
+      "scenario": "An AI researcher is designing a poster for an academic conference and wants to ensure the typography matches the company's public identity.",
+      "user_query": "I am laying out a research poster in Typst. What font pairings should I use for titles versus paragraph text to maintain our organization's signature visual style?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-23",
+      "scenario": "A founder at an Anthropic-partnered startup is designing a co-branded deck and wants the Anthropic section to match its authentic aesthetic.",
+      "user_query": "I'm building a co-marketing slide deck and want the Anthropic overview slides to match Anthropic's distinct aesthetic. What colors and font combinations should I apply?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-24",
+      "scenario": "A developer is creating a CLI tool that outputs rich terminal text and wants the ANSI color formatting inspired by company styling.",
+      "user_query": "I'm styling the terminal output of our internal CLI tool using Rich. What color palette should I set for primary text, subtle borders, and warning/info accents to match our organization's visual design?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-25",
+      "scenario": "A documentation lead is revamping the corporate developer portal layout with proper card background tones.",
+      "user_query": "We are refreshing the doc site's callout boxes. What hex values should we use for subtle background panels and secondary text elements to align with our visual standards?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-26",
+      "scenario": "A team lead is creating a printable certificate of completion for an internal prompt engineering course.",
+      "user_query": "Please design an HTML/CSS layout for an award certificate that reflects our company's sophisticated, warm minimalist visual identity.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-27",
+      "scenario": "A product manager needs to create a visual roadmap timeline graphic with alternating milestone colors.",
+      "user_query": "I'm rendering a SVG milestone timeline for Q3. Can you give me the sequence of three accent colors from our company design standards to cycle through the milestone nodes?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-28",
+      "scenario": "An operations lead is formatting an internal policy handbook in Pandoc and wants appropriate typography settings.",
+      "user_query": "I'm converting our onboarding guide from Markdown to PDF via Weasyprint. Which heading and body font families should I declare so it reflects our corporate look?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-29",
+      "scenario": "A marketing intern is creating a social media quote card graphic and needs the right dark background tone and accent highlight.",
+      "user_query": "I'm designing a quote card for Twitter featuring a quote from Dario. What dark color should I use for the card background, and what accent color for the quotation mark icon?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "brand-guidelines-30",
+      "scenario": "A customer success manager is formatting a quarterly business review document in Google Docs / Word.",
+      "user_query": "I want to manually set up custom styles in my QBR doc. What exact font names should I assign to Title/Heading 1 and Normal text so it matches our company's aesthetic?",
+      "explicitness": "implicit"
+    }
+  ]
+}

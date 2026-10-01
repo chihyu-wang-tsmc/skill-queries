@@ -1,0 +1,188 @@
+{
+  "skill": "discernment-nudge",
+  "description": "After you give a substantive answer or draft that the user may act on — advice or recommendations, drafted artifacts such as goals, plans, pitches, proposals, or emails, estimates or projections, analysis or interpretation of data, factual claims they may rely on, or a multi-step argument — invoke this skill BEFORE finalizing your reply and then, if it applies, append 2-3 short follow-up questions, each tied to something specific in what you just produced, that help the user check key facts, probe the reasoning or assumptions, and notice missing context. Do this at most once per conversation. Skip it when the user asked a trivial how-to or simple lookup, wants a purely educational explanation, asked you only to format, convert, or assemble a file from content they provided, is writing code they will run, is doing creative writing or casual chat, or already asked you to double-check, cite, or review — the skill file explains these boundaries and the exact output format.\n",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:31:39+00:00",
+  "scenarios": [
+    {
+      "id": "discernment-nudge-01",
+      "scenario": "A SaaS startup founder needs a recommended go-to-market pricing model and asks for actionable advice along with reflection prompts to probe underlying assumptions.",
+      "user_query": "We're launching a B2B compliance monitoring tool for mid-market fintechs. Recommend a multi-tiered pricing strategy and structure, and include a few discernment follow-up questions to help me interrogate your assumptions and key metrics.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "discernment-nudge-02",
+      "scenario": "A digital marketing manager needs a concrete quarterly paid acquisition budget allocation across Meta, Google Ads, and LinkedIn.",
+      "user_query": "I have a $45,000 monthly ad spend budget for a direct-to-consumer ergonomic chair brand. Can you give me an exact channel allocation breakdown with projected CAC and ROAS targets for Q3?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-03",
+      "scenario": "An independent coffee shop owner wants a financial projection model for expanding to a second downtown location.",
+      "user_query": "I'm thinking about opening a second cafe spot in downtown Seattle with 1,200 sq ft. Provide an estimated startup cost breakdown, monthly fixed vs variable overheads, and a break-even timeline.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-04",
+      "scenario": "A product lead wants a 6-month product roadmap draft and explicitly asks for reflection questions to check missing context and reasoning steps.",
+      "user_query": "Draft a 6-month feature roadmap for migrating our legacy monolith user portal to a micro-frontend architecture. At the end, apply discernment nudges so I can spot unstated assumptions or facts I should verify.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "discernment-nudge-05",
+      "scenario": "A freelance designer wants advice on whether to incorporate as an S-Corp or stay an LLC based on their annual revenue.",
+      "user_query": "I'm a freelance UX designer making roughly $140,000 in net profit annually in Illinois. Should I elect S-Corp tax status this year or remain a standard single-member LLC?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-06",
+      "scenario": "A VP of Engineering asks for architectural advice between AWS serverless vs Kubernetes along with prompt questions to evaluate missing context.",
+      "user_query": "Recommend whether our 10-person backend engineering team should build our new event-driven analytics pipeline on AWS Lambda/EventBridge or EKS. Include a few reflection prompts to help me question your reasoning and check missing constraints.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "discernment-nudge-07",
+      "scenario": "A marathon runner wants a customized 16-week training schedule and fueling plan to qualify for Boston.",
+      "user_query": "My current marathon PR is 3:18, and I want to hit 3:00 flat in 16 weeks. Lay out a weekly mileage progression, target workout paces, and an intra-race fueling protocol.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-08",
+      "scenario": "A boutique consultancy partner wants a proposal draft for a corporate change management contract.",
+      "user_query": "Draft a 3-page executive scope of work proposal for a 500-employee logistics firm restructuring their procurement division, including project phases, deliverable milestones, and billing schedule.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-09",
+      "scenario": "An HR director wants to design a hybrid return-to-office policy and asks for discernment questions to evaluate the policy's potential blind spots.",
+      "user_query": "Outline a mandatory 3-day in-office hybrid work policy for our 300 tech workers, addressing core collaboration hours and compliance enforcement. Please add discernment questions at the end to help me probe hidden assumptions.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "discernment-nudge-10",
+      "scenario": "A real estate investor is deciding whether to buy a multi-family duplex with an estimated cap rate.",
+      "user_query": "I'm evaluating a $650,000 duplex in Cleveland with $5,200 total monthly rental income and 7.5% interest rate. Calculate the estimated net operating income, cash-on-cash return, and tell me if I should pull the trigger.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-11",
+      "scenario": "A mid-level software engineer is drafting a delicate compensation renegotiation email after receiving an external offer.",
+      "user_query": "I have an outside offer for $175k base while currently making $145k at my company. Write an email to my manager to negotiate a counter-offer without sounding combative or ready to quit tomorrow.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-12",
+      "scenario": "A head of sales wants a quarterly commission tier overhaul and asks for follow-up prompts to check specific compensation figures and logic.",
+      "user_query": "Design an accelerated commission structure for our 8 enterprise account executives with quotas of $1.2M ARR. Include follow-up discernment prompts to help me scrutinize the payout math and team assumptions.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "discernment-nudge-13",
+      "scenario": "A consumer looking to manage joint pain wants an opinionated supplement regimen recommendation.",
+      "user_query": "I have mild osteoarthritis in both knees from years of running. What daily supplement regimen should I start taking to reduce inflammation and preserve cartilage, and what exact dosages should I use?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-14",
+      "scenario": "An operations manager needs an interpretation of customer churn data across multiple cohort months.",
+      "user_query": "Here are our retention numbers: Month 1: 100%, Month 2: 72%, Month 3: 48%, Month 6: 44%, Month 12: 42%. Interpret these cohort curves and tell me what operational fixes we need to prioritize.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-15",
+      "scenario": "A supply chain director wants a warehouse relocation timeline and asks for discernment prompts to evaluate logistical risks.",
+      "user_query": "Lay out a step-by-step 90-day cutover plan to migrate our 50,000 sq ft distribution center to a new facility in Texas. Give me reflection follow-up questions at the end to check our equipment and labor assumptions.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "discernment-nudge-16",
+      "scenario": "A solar energy customer wants an estimate of battery storage requirements and payback periods for a residential home.",
+      "user_query": "We consume 1,400 kWh/month in Arizona on a Time-of-Use rate plan. Calculate how many Tesla Powerwalls we should install alongside a 10kW rooftop solar system and project our net payback timeline.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-17",
+      "scenario": "A tenant is asking how to legally withhold rent due to an unresolved heating issue in an apartment.",
+      "user_query": "My landlord hasn't fixed our broken boiler in Minneapolis for two weeks and it's 25 degrees. What exact steps should I take to escrow or withhold rent legally, and how long does the notice period have to be?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-18",
+      "scenario": "A marketing director wants an enterprise SEO migration strategy accompanied by discernment reflection prompts.",
+      "user_query": "Outline the redirect and site-hierarchy migration strategy for re-platforming a 20,000-page e-commerce domain to Shopify Plus. Append discernment nudges so I can verify our SEO risk factors and traffic assumptions.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "discernment-nudge-19",
+      "scenario": "A high school senior choosing between university financial aid offers needs a recommendation on which to accept.",
+      "user_query": "I got into NYU with $15k/year aid (leaving $65k/year in loans) and Ohio State with in-state tuition at $12k/year total cost for a Computer Science degree. Which school should I choose to maximize my career ROI?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-20",
+      "scenario": "A restaurant chef wants to overhaul menu pricing and food cost targets to combat inflation.",
+      "user_query": "Our overall food cost percentage has spiked to 38% due to beef and dairy inflation. Outline a revised menu engineering plan and pricing matrix to push our COGS back down to 28% without alienating regulars.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-21",
+      "scenario": "A clinic administrator wants an onboarding protocol for new medical assistants with reflection questions on regulatory and workflow gaps.",
+      "user_query": "Provide a 4-week clinical training checklist and credentialing schedule for newly hired medical assistants in an outpatient cardiology clinic. Include a discernment nudge section to help me probe our staffing assumptions.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "discernment-nudge-22",
+      "scenario": "A parent wants an investment strategy for a child's college fund between a 529 plan and a custodial taxable brokerage.",
+      "user_query": "My daughter is 3 years old and we have $25,000 lump sum plus $500/month to invest for her higher education in California. Tell me how I should allocate this between a 529 plan and a UTMA brokerage.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-23",
+      "scenario": "An executive coach is writing an email pitch to prospective Fortune 500 leadership clients.",
+      "user_query": "Draft a cold outbound email sequence aimed at Chief People Officers offering our 6-month executive leadership coaching cohorts at $12,000 per seat.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-24",
+      "scenario": "A team lead wants advice on PIP implementation and asks for follow-up prompts to question potential legal or HR blind spots.",
+      "user_query": "Provide a 30-day Performance Improvement Plan (PIP) framework for an underperforming senior sales rep who missed quota for two straight quarters. Add a few discernment questions at the end so I can review missing context.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "discernment-nudge-25",
+      "scenario": "A homeowner wants an analysis on whether to install an air-source heat pump or replace an aging natural gas furnace.",
+      "user_query": "I live in upstate New York with an 80% efficiency gas furnace from 2002 in a 2,200 sq ft home. Should I switch to a cold-climate heat pump with Inflation Reduction Act rebates or buy a modern 96% gas furnace?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-26",
+      "scenario": "A non-profit director is preparing an operating grant proposal to a major philanthropic foundation.",
+      "user_query": "Draft the 'Project Objectives and Expected Outcomes' section for our $250,000 grant application to fund an after-school STEM mentorship initiative for 400 underprivileged students.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-27",
+      "scenario": "A CTO wants an enterprise database migration strategy and asks for reflection questions to evaluate migration velocity and data safety assumptions.",
+      "user_query": "We are migrating 4TB of relational customer records from on-premise PostgreSQL to AWS Aurora Serverless v2. Recommend a zero-downtime migration strategy and append discernment nudges to question our replication assumptions.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "discernment-nudge-28",
+      "scenario": "An e-commerce business owner wants to know whether to switch fulfillment from in-house to Amazon FBA.",
+      "user_query": "We ship 1,500 packages per month with an average weight of 2.5 lbs and $45 AOV. Recommend whether we should outsource to Amazon FBA or sign a contract with a 3PL partner based on cost and inventory control.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-29",
+      "scenario": "A fitness trainer is designing an aggressive cutting diet plan for an amateur bodybuilding competitor.",
+      "user_query": "I'm 12 weeks out from a men's physique show, currently at 182 lbs and roughly 12% body fat. Give me a daily macronutrient breakdown and refeed schedule to hit 6% body fat safely.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "discernment-nudge-30",
+      "scenario": "A small business owner wants a cybersecurity risk mitigation plan and asks for discernment follow-ups to probe vulnerability assumptions.",
+      "user_query": "Create an incident response plan and baseline security checklist for our 35-person accounting firm handling sensitive client tax returns. Add discernment prompts at the end so I can verify our infrastructure assumptions.",
+      "explicitness": "explicit"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "skill": "web-artifacts-builder",
+  "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:32:29+00:00",
+  "scenarios": [
+    {
+      "id": "web-artifacts-builder-01",
+      "scenario": "A SaaS product manager needs a comprehensive interactive pricing calculator to demonstrate subscription tier economics and volume discounts with dynamic sliders and feature comparison tabs.",
+      "user_query": "I need an interactive pricing simulator for our sales deck. It should let users toggle between monthly/annual billing, adjust team seat count and data retention sliders, and display a feature comparison matrix with upgrade triggers and live tier recommendation cards.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-02",
+      "scenario": "A frontend engineer wants to create a complex Kanban board artifact using shadcn/ui and bundled into a single file to showcase task workflows.",
+      "user_query": "Can you use the web-artifacts-builder to scaffold a React and shadcn/ui Kanban board? I need drag-and-drop column support, task tag filters, and a modal dialog for editing card details, then bundle everything into a single HTML artifact.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-03",
+      "scenario": "A financial risk officer needs an interactive portfolio stress-testing dashboard with multiple scenario toggles, asset breakdown charts, and drawdown tables.",
+      "user_query": "Could you build me an interactive dashboard where I can run stress tests on a multi-asset portfolio? I need interest rate shock sliders, inflation toggles, a breakdown chart showing asset allocation, and an alert banner when maximum drawdown exceeds 15%.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-04",
+      "scenario": "A UX designer is prototyping a multi-step checkout flow with form validation, order summary accordion, and mock payment confirmation modal.",
+      "user_query": "I want a high-fidelity prototype of an e-commerce checkout flow. It needs 3 distinct steps: shipping address with real-time field validation, delivery method selection cards, and a payment step with an expandable order breakdown and a success confirmation popup.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-05",
+      "scenario": "A tech lead wants a full-featured admin management dashboard artifact with Radix UI components, TypeScript, and Parcel bundling.",
+      "user_query": "Please initialize an artifact project using init-artifact.sh and build a user access management panel with shadcn data tables, badge status pills, and dropdown action menus. Once done, bundle it to bundle.html so I can view the artifact directly.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-06",
+      "scenario": "A hospital triage supervisor needs an interactive bed capacity and patient tracking console with department filters and priority status badges.",
+      "user_query": "I need a live ward management simulator. It should show ER, ICU, and General Ward bed occupancy with color-coded status badges, a searchable patient admission list, and a modal to reassign beds or trigger emergency overflow status.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-07",
+      "scenario": "A high school biology teacher wants an interactive flashcard and quiz app built as a multi-component React artifact with shadcn UI.",
+      "user_query": "Create an interactive study app artifact with React and shadcn components. It should include flashcard flipping animations, a 10-question multiple-choice quiz mode with instant scoring, category filters for Cell Biology vs Genetics, and a progress tracker.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-08",
+      "scenario": "A cloud solutions architect needs to demo an interactive AWS vs Azure vs GCP cost estimation tool bundled as an inlined HTML file.",
+      "user_query": "I need a multi-cloud cost calculator artifact. Please set it up with the web-artifacts-builder toolchain so it uses Tailwind and shadcn tabs/sliders for configuring compute instances, storage tiers, and network egress, then package it into a self-contained HTML artifact.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-09",
+      "scenario": "A sales operations lead needs an interactive deal pipeline review tool with stage progression, revenue forecasting, and activity logging drawers.",
+      "user_query": "Can you make an interactive pipeline inspector? I want to see deals arranged across Prospecting, Qualified, Proposal, and Closed stages with aggregate revenue calculations, search filters by rep, and a side-drawer showing deal activity history when clicked.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-10",
+      "scenario": "A fintech founder wants a personal wealth and crypto portfolio tracking prototype using React 18 and shadcn/ui components.",
+      "user_query": "Build a multi-tab personal finance dashboard artifact using shadcn/ui cards, charts, and dialogs. It should let me simulate fiat savings vs crypto holdings, track monthly burn rate, and test rebalancing strategies with interactive sliders.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-11",
+      "scenario": "A warehouse logistics manager needs a stock reorder and inventory management dashboard with low-stock alerts and batch tracking.",
+      "user_query": "I need an interactive inventory control board. It should list SKU items with current stock levels, show visual alert badges for items below reorder thresholds, provide a search bar, and include a modal to submit simulated restocking purchase orders.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-12",
+      "scenario": "A tabletop game master needs an interactive RPG character creator with stat rolls, equipment inventory tabs, and spellbook lookups.",
+      "user_query": "Make an interactive D&D character sheet application. I want point-buy ability score allocators, a dynamic modifier calculator, inventory equipment slots with weight limits, and an expandable spellbook filterable by spell level.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-13",
+      "scenario": "A software architect wants to build an enterprise RBAC permissions matrix using scripts/init-artifact.sh and bundle-artifact.sh.",
+      "user_query": "Use scripts/init-artifact.sh to set up a new project called 'rbac-matrix'. Build an interactive grid where administrators can toggle granular read/write/delete permissions across different user roles and services, then run bundle-artifact.sh to generate the final artifact.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-14",
+      "scenario": "An HR director needs an employee onboarding hub with multi-step checklists, team directory search, and progress metrics.",
+      "user_query": "I need an onboarding portal where a new hire can see a day 1-30 milestone checklist, click to review mandatory policy documents in an overlay, search colleague profiles by department, and see an overall completion percentage bar update in real-time.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-15",
+      "scenario": "A customer success manager wants an interactive support ticket queue artifact built with shadcn/ui table and dialog components.",
+      "user_query": "Please build a multi-component customer support desk artifact using shadcn/ui. I need ticket priority filtering, an SLA countdown timer on open tickets, a reply editor with canned response templates, and customer detail popups.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-16",
+      "scenario": "An AI researcher needs an interactive prompt playground with side-by-side LLM output comparisons, parameter sliders, and prompt template management.",
+      "user_query": "I need an interactive prompt comparison workbench. It should allow me to type a prompt, tune temperature and max_tokens sliders, compare mock completions across 3 model columns side-by-side, and save/load custom prompt presets.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-17",
+      "scenario": "A senior developer wants to build a complex data-dense analytics artifact with cmdk command menu and shadcn tables.",
+      "user_query": "Scaffold a web artifact project with Tailwind and shadcn/ui. Build an application performance monitor with a global Cmd+K search palette, server response latency graphs, and a filterable error log table with expandable stack traces.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-18",
+      "scenario": "A real estate consultant wants an interactive property investment comparison tool with dynamic mortgage calculations and cash flow projections.",
+      "user_query": "Can you create a property comparison tool? I want to input two properties with purchase prices, estimated rental income, HOA fees, and mortgage rates, and see side-by-side comparisons of cap rate, cash-on-cash return, and 10-year equity projections.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-19",
+      "scenario": "A site reliability engineer requests a standalone single-file HTML Kubernetes pod monitoring dashboard using React, TypeScript, and Parcel bundling.",
+      "user_query": "I need a single-file HTML artifact showing a Kubernetes cluster topology viewer. Please build it with React 18, TypeScript, and shadcn components, including namespace dropdowns, pod status badges, restart count alerts, and bundle it with the Parcel bundler script.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-20",
+      "scenario": "A UI/UX designer needs a modern mobile navigation and drawer prototype using shadcn sheet and navigation-menu components.",
+      "user_query": "Create an interactive prototype for a mobile banking navigation system using shadcn/ui sheet, tabs, and avatar components. Make sure it adheres to clean styling guidelines without generic purple gradients or AI slop, and compile it to a single HTML bundle.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-21",
+      "scenario": "A music producer needs an interactive synth patch sound design visualizer with envelope knobs, filter resonance curves, and preset loaders.",
+      "user_query": "I want an interactive synthesizer parameter visualizer. It should feature ADSR envelope curve manipulation via sliders, filter cutoff and resonance controls, an oscillator waveform selector (sine, saw, square), and a preset dropdown to load sample sound profiles.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-22",
+      "scenario": "A cybersecurity incident lead needs an interactive SOC incident response playbook with severity escalation checklists and timeline logging.",
+      "user_query": "Build an incident response runbook interface. It should allow analysts to select incident types like Ransomware or Phishing, follow step-by-step containment checklists, add timestamped notes to an incident event log, and toggle severity escalation levels.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-23",
+      "scenario": "A web developer wants to build an interactive component library showcase using the web-artifacts-builder suite.",
+      "user_query": "Use the web-artifacts-builder scripts to initialize and bundle a component showcase artifact. Include shadcn accordion, date picker, toggle group, and popover components with an interactive theme-switching preview.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-24",
+      "scenario": "A fitness coach needs a daily meal and workout planning dashboard with calorie macro splits and weekly schedule calendars.",
+      "user_query": "I'd like an interactive meal and workout planner. The user should be able to switch between days of the week, log exercises with sets/reps, input food items to see protein/carb/fat macro progress bars update, and view a daily calorie deficit target.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-25",
+      "scenario": "A conference organizer needs an interactive conference agenda builder artifact with bookmarked sessions and speaker dialogs using shadcn/ui.",
+      "user_query": "Please create a conference schedule builder artifact using shadcn/ui tabs, badges, and dialogs. Attendees should be able to filter talks by track, bookmark sessions into a 'My Schedule' view, and click speakers to open a bio modal.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-26",
+      "scenario": "A technical writer wants to create an interactive API explorer artifact with code syntax previews and endpoint parameter testing bundled to bundle.html.",
+      "user_query": "Set up a frontend artifact with React and Tailwind that acts as an interactive REST API documentation explorer. It should let users select endpoints (GET, POST, DELETE), toggle request headers/body parameters, see mock JSON responses, and be bundled into bundle.html.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-27",
+      "scenario": "A travel agent needs a multi-destination vacation itinerary planner with interactive budget breakdowns, currency conversion, and checklist tabs.",
+      "user_query": "Create an interactive travel itinerary planner where users can plan a 7-day trip across multiple cities. Include a day-by-day activity timeline, an interactive expense ledger categorized by flights, hotels, and food, and a packing checklist with completion filters.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-28",
+      "scenario": "A digital marketing strategist needs an interactive A/B testing campaign ROI simulator with conversion funnel drop-off visuals.",
+      "user_query": "Can you build an interactive A/B testing calculator? It should let me input traffic, baseline conversion rate, and expected lift for Variant A vs B, calculate statistical confidence levels, display a 4-stage conversion funnel, and estimate incremental revenue.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "web-artifacts-builder-29",
+      "scenario": "A fullstack engineer needs a multi-tenant SaaS organization settings UI built with React 18, Tailwind CSS, and shadcn/ui.",
+      "user_query": "I need a multi-tenant settings panel artifact built with React, TypeScript, and shadcn/ui components. It should include tabs for General Org Info, Member Roles & Invites table with permission toggles, API Keys generation modal, and Webhook configuration forms.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "web-artifacts-builder-30",
+      "scenario": "A fleet dispatch coordinator needs an interactive vehicle tracking and driver dispatch console with alert modals and live telemetry simulation.",
+      "user_query": "I need an interactive fleet dispatch dashboard. Show a grid of delivery vehicles with status pills (In Transit, Idle, Delayed), fuel and battery gauges, a filter by operational zone, and a dispatch modal to assign unassigned delivery routes to available drivers.",
+      "explicitness": "implicit"
+    }
+  ]
+}

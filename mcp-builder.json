@@ -1,0 +1,188 @@
+{
+  "skill": "mcp-builder",
+  "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:31:55+00:00",
+  "scenarios": [
+    {
+      "id": "mcp-builder-01",
+      "scenario": "A software engineer wants to build an MCP server in Python to connect internal Jira tickets to an LLM workflow.",
+      "user_query": "I need to build a FastMCP Python server that exposes Jira issues to our AI agents. Can you help me set up the server structure with proper Pydantic schemas and annotations?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-02",
+      "scenario": "A backend developer is creating a TypeScript-based Model Context Protocol server for GitHub integration and needs standard project boilerplate.",
+      "user_query": "Please generate the scaffolding for a node MCP server for GitHub, including package.json, tsconfig.json, and an index.ts using @modelcontextprotocol/sdk McpServer.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-03",
+      "scenario": "A solutions architect wants to give their Claude Desktop app the ability to search and read customer records from a proprietary REST API.",
+      "user_query": "I want Claude Desktop to be able to query our internal customer CRM via our REST API. How do I build a bridge server so the model can call search and fetch endpoints reliably?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "mcp-builder-04",
+      "scenario": "A developer wants to write evaluation test cases to ensure their newly built MCP server works accurately with complex queries.",
+      "user_query": "I just finished implementing my MCP server. How do I generate an XML evaluation file with 10 read-only multi-hop QA pairs to test how well LLMs interact with it?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-05",
+      "scenario": "An AI engineer needs to implement custom tooling with streamable HTTP transport instead of stdio for a cloud deployment.",
+      "user_query": "We want to deploy our model integration server as a remote service using Express and StreamableHTTPServerTransport. Can you provide the proper configuration and request handler pattern?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-06",
+      "scenario": "A full-stack engineer wants to expose internal database metrics to an LLM without returning bloated payloads that exceed context limits.",
+      "user_query": "I'm exposing database telemetry tools to our AI assistant, but large query results blow up the context window. What are the best practices for truncation limits, pagination metadata, and dual markdown/JSON responses?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "mcp-builder-07",
+      "scenario": "A Python developer needs to use FastMCP's advanced features like Context injection to report progress during long-running tasks.",
+      "user_query": "In my Python FastMCP server, how do I inject the Context object into a tool to log messages and report progress back to the client while a long query runs?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-08",
+      "scenario": "A DevOps engineer needs to run the automated evaluation harness script against their local stdio Python server.",
+      "user_query": "How do I run the scripts/evaluation.py harness against my local python server script using stdio transport with an API key passed in?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-09",
+      "scenario": "A developer wants to add read-only file resources rather than tools into their MCP server using URI templates.",
+      "user_query": "I want my TypeScript MCP server to serve static configuration and logs via URI templates like file://logs/{service} instead of callable tools. How do I register resources properly?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-10",
+      "scenario": "An engineer is integrating an internal Slack bot with an AI agent and needs properly named tools with safety hints.",
+      "user_query": "I'm setting up tool definitions so an LLM can send messages and create channels in Slack. How should I configure annotations like readOnlyHint, destructiveHint, and idempotentHint, and what naming format should I follow?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "mcp-builder-11",
+      "scenario": "A developer is refactoring legacy code that used deprecated MCP TypeScript SDK methods to modern standards.",
+      "user_query": "My TypeScript MCP codebase uses server.setRequestHandler(ListToolsRequestSchema) and server.tool(). Can you help me migrate everything to modern server.registerTool() with Zod schemas?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-12",
+      "scenario": "A data engineer wants to expose an internal Postgres database as standard tools that LLM agents can query safely.",
+      "user_query": "I need to construct a lightweight connector service in Python that lets an LLM inspect schema tables and execute read-only SQL queries with strict parameter validation.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "mcp-builder-13",
+      "scenario": "A platform engineer wants to understand whether to choose stdio or Streamable HTTP transport for their upcoming MCP service.",
+      "user_query": "Can you explain the trade-offs between stdio and Streamable HTTP transports in MCP servers, and when we should avoid using deprecated SSE?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-14",
+      "scenario": "A frontend engineer wants to build an MCP server in TypeScript for Notion API with proper pagination handling.",
+      "user_query": "I'm writing a Notion integration tool for an agent using TypeScript. How should I implement cursor-based pagination with limit, offset/cursor, has_more, and total_count in the Zod schema and response?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-15",
+      "scenario": "A developer is getting DNS rebinding security warnings when running an MCP server locally over HTTP.",
+      "user_query": "What security configurations do I need to prevent DNS rebinding attacks on my local streamable HTTP MCP server?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-16",
+      "scenario": "A product team needs to evaluate whether their LLM agent can find historical information using custom tools.",
+      "user_query": "I need a set of evaluation criteria and questions to test if Claude can navigate our support ticket archives across multiple tool calls without relying on dynamic state.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "mcp-builder-17",
+      "scenario": "A Python developer needs to implement lifespan management for persistent database connection pools in FastMCP.",
+      "user_query": "How do I use asynccontextmanager to set up app_lifespan in FastMCP so that database connections stay open across multiple tool calls?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-18",
+      "scenario": "A junior engineer is writing error handling for tools connecting to an external REST API.",
+      "user_query": "When my tool encounters a 404 or 429 status from an external API, how should I format the error in the tool response object so the LLM knows how to recover?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "mcp-builder-19",
+      "scenario": "An AI developer is creating an MCP server for Stripe in TypeScript and needs to return both human-readable text and structured data.",
+      "user_query": "How do I use structuredContent alongside the content text array in @modelcontextprotocol/sdk's server.registerTool?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-20",
+      "scenario": "A backend lead wants to audit a newly written Python tool decorator to ensure it follows standard MCP best practices.",
+      "user_query": "Here is my Python tool definition using Pydantic v2 and FastMCP. Can you review it against the official quality checklist for field constraints, docstrings, annotations, and naming conventions?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-21",
+      "scenario": "A systems engineer wants to allow Claude to query system performance and disk usage on a local server.",
+      "user_query": "I want to create a local CLI subprocess service that lets an agent run safe disk usage and process inspection commands on Linux. What's the recommended protocol and architecture for this?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "mcp-builder-22",
+      "scenario": "A developer needs to support interactive user prompts (elicitation) in a Python MCP tool.",
+      "user_query": "How can a tool in FastMCP ask the human user for a password or confirmation dynamically during execution using ctx.elicit?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-23",
+      "scenario": "A QA engineer needs to run benchmark evaluations over an SSE or Streamable HTTP MCP server.",
+      "user_query": "What command should I run with evaluation.py to connect to a remote HTTP MCP server at https://api.internal/mcp with Bearer authentication headers?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-24",
+      "scenario": "A developer wants to design tool interfaces for an Asana workspace so an AI agent can manage projects effectively.",
+      "user_query": "I'm building tool definitions for Asana. Should I build one monolithic task-management tool or individual atomic tools like asana_create_task and asana_list_projects? How should they be named?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "mcp-builder-25",
+      "scenario": "A developer wants to make sure their TypeScript MCP server outputs dual formats depending on user preference.",
+      "user_query": "Can you show me how to implement a response_format enum ('markdown' | 'json') in a Zod schema and format the output strings accordingly in registerTool?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-26",
+      "scenario": "An engineer is troubleshooting why an MCP Inspector session fails to connect to their custom Python server.",
+      "user_query": "I'm testing my python_mcp server with npx @modelcontextprotocol/inspector, but stdio logging is breaking the connection. Why is stdout causing issues and where should I send logs?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-27",
+      "scenario": "A software engineer wants to give an AI agent access to AWS S3 buckets to inspect log files.",
+      "user_query": "We want to let an AI assistant search and inspect log archives in our AWS S3 bucket. How should we architect the tool interfaces, prefix schemas, and read-only safety hints for this agent service?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "mcp-builder-28",
+      "scenario": "A developer is writing unit evaluations for their custom GitHub MCP server and needs help writing difficult multi-hop questions.",
+      "user_query": "I need 3 realistic, complex QA pairs for my GitHub MCP evaluation file that require chaining repository searches, commit diffs, and contributor lookups with single verifiable answers.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-29",
+      "scenario": "An API developer wants to structure a TypeScript project that implements multiple domain tools for an ERP system.",
+      "user_query": "What is the recommended directory structure for a production-grade TypeScript MCP server with multiple tool domains, schemas, and shared HTTP services?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "mcp-builder-30",
+      "scenario": "A developer wants to enable an AI agent to query customer order statuses from Shopify without modifying store state.",
+      "user_query": "I want to connect Shopify's Admin API to our AI assistant so it can look up order histories and shipping tracking numbers. What is the standard way to build and validate this agent integration?",
+      "explicitness": "implicit"
+    }
+  ]
+}

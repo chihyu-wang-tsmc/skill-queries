@@ -1,0 +1,188 @@
+{
+  "skill": "claude-api",
+  "description": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration.\nTRIGGER — read BEFORE opening the target file; don't skip because it \"looks like a one-liner\" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent/RAG/LLM-judge/computer-use; generate/summarize/extract/classify/rewrite/converse over NL; debugging refusals/cutoffs/streaming/tool-calls/tokens).\nSKIP only when another provider is being worked on (overrides all triggers): OpenAI/GPT/Gemini/Llama/Mistral/Cohere/Ollama named in the query; OR `grep -rE 'openai|langchain_openai|google.generativeai|genai|mistralai|cohere|ollama'` over the project hits (run this grep FIRST if no provider named — don't Read the file).",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:31:33+00:00",
+  "scenarios": [
+    {
+      "id": "claude-api-01",
+      "scenario": "A Python backend engineer needs to update an existing microservice from Claude 3.5 Sonnet to Claude Opus 5.5, but wants to know the breaking changes and how to configure adaptive thinking.",
+      "user_query": "I need to migrate our Python backend from older Claude models to claude-opus-5-5. What are the key breaking changes regarding thinking parameters and forced tool choice?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-02",
+      "scenario": "A machine learning engineer needs to accurately count input tokens for prompt management before dispatching requests, but is currently using tiktoken which undercounts.",
+      "user_query": "How can I programmatically check the exact token count of our prompt files before sending them to the model so we don't accidentally exceed context limits?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "claude-api-03",
+      "scenario": "A TypeScript developer wants to reduce API latency and cost on static system prompts and large document contexts using prompt caching with the official Anthropic SDK.",
+      "user_query": "Can you show me how to set up ephemeral prompt caching in @anthropic-ai/sdk on our system message and a large reference PDF?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-04",
+      "scenario": "A DevOps engineer is setting up automated CI/CD runners to interact with an LLM without hardcoding long-lived API keys in repository secrets.",
+      "user_query": "How do we configure Workload Identity Federation with our service account and OIDC tokens instead of using static API keys for client initialization?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "claude-api-05",
+      "scenario": "A prompt engineer wants to audit the repository's CLAUDE.md and system prompts to eliminate outdated model cruft and obsolete formatting hacks.",
+      "user_query": "/claude-api prompt-audit",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-06",
+      "scenario": "A frontend developer is building a real-time web chat interface in Next.js and needs to stream model completions while handling tool call events smoothly.",
+      "user_query": "What's the recommended way to stream text responses to the frontend while also handling tool use without encountering HTTP timeouts?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "claude-api-07",
+      "scenario": "A data engineer has a backlog of 40,000 PDF documents to summarize asynchronously overnight and wants to use Anthropic's Message Batches API for 50% discount.",
+      "user_query": "Show me a Python script to create, poll, and retrieve results from the Claude Batches API for batch document summarization.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-08",
+      "scenario": "A software engineer is seeing 400 errors after editing previous conversation turns in a multi-turn reasoning agent and needs to fix preserved thinking mismatch.",
+      "user_query": "Our chat history manager prunes old turns, but now our requests fail with an error about thinking blocks and conversation history mismatch. How should we handle turn history?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "claude-api-09",
+      "scenario": "A cloud architect is deploying Claude on AWS infrastructure and needs to know how to initialize the AnthropicAWS client with SigV4 authentication.",
+      "user_query": "How do I configure AnthropicAWS in Python with AWS_REGION and workspace ID? Does it use the same model IDs as first-party Claude?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-10",
+      "scenario": "A tech lead notices API costs are skyrocketing on their customer support agent and wants a structured plan to optimize token usage and caching.",
+      "user_query": "/claude-api cost-optimize",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-11",
+      "scenario": "A Ruby on Rails developer wants to integrate streaming LLM responses in their background jobs using the official Ruby SDK.",
+      "user_query": "How do I stream responses chunk-by-chunk using the Anthropic Ruby gem?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-12",
+      "scenario": "A developer wants to build a multi-step agent with custom calculator and weather tools without having to write a manual `while stop_reason == 'tool_use'` loop.",
+      "user_query": "Is there a built-in tool runner helper in the SDK that automatically executes my tool functions and loops until the final answer is ready?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "claude-api-13",
+      "scenario": "A Go developer needs to call Claude models hosted on Google Cloud Vertex AI using ADC authentication.",
+      "user_query": "Show me how to initialize the Go SDK with Google Vertex AI backend using github.com/anthropics/anthropic-sdk-go/vertex.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-14",
+      "scenario": "A product team wants to benchmark their customer support prompt variations against a golden dataset before deploying changes to production.",
+      "user_query": "/claude-api build-eval",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-15",
+      "scenario": "An enterprise workspace administrator wants to automate the creation of workspace members and API keys using the Organization Admin API.",
+      "user_query": "How can I use client.beta.organization in the Python SDK to manage workspaces and provision service accounts with sk-ant-admin keys?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-16",
+      "scenario": "A developer wants Claude to perform web searches and fetch URL content during reasoning, restricting searches to verified documentation domains.",
+      "user_query": "How do I enable the native web search and web fetch server tools with allowed_domains in messages.create?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-17",
+      "scenario": "A Java backend developer needs to enforce strict schema adherence on model outputs and parse them directly into POJOs.",
+      "user_query": "How do I configure structured outputs in the Java SDK so the model output is validated against my JSON schema?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "claude-api-18",
+      "scenario": "A security analyst wants to configure an autonomous agent that runs on a weekly cron schedule inside a hosted sandbox to audit repository permissions.",
+      "user_query": "How do I set up a scheduled deployment for Managed Agents with a cron expression to execute recurring compliance audits?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-19",
+      "scenario": "A Python developer is upgrading their repository's dependencies from anthropic 0.x to 1.x and needs guidance on deprecated methods.",
+      "user_query": "/claude-api upgrade python",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-20",
+      "scenario": "A developer is building a long-running customer interview bot and is worried about exceeding the 1M token context limit as turns accumulate.",
+      "user_query": "How can I enable server-side compaction so long conversation history gets summarized automatically without losing conversation state?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "claude-api-21",
+      "scenario": "A C# developer working in an enterprise .NET environment needs to call Claude models through Amazon Bedrock using IAM credentials.",
+      "user_query": "How do I instantiate AnthropicBedrockMantleClient in C# and what model prefix do I need to use?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-22",
+      "scenario": "A legal tech engineer wants to pass multi-hundred page PDF contracts into user queries and extract exact page-numbered citation blocks in the output.",
+      "user_query": "How do I pass a base64 PDF into a message request and enable citations so the model returns exact page references?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "claude-api-23",
+      "scenario": "An AI engineer wants to set thinking effort to medium on Claude Opus 5.5 and handle progress update thinking blocks.",
+      "user_query": "What is the proper syntax for output_config.effort on claude-opus-5-5, and why does thinking: {type: 'disabled'} throw a 400 error?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-24",
+      "scenario": "A developer wants Claude to write Python scripts in a server sandbox and execute local tools programmatically from inside the code environment.",
+      "user_query": "How do I set up programmatic tool calling with code execution so intermediate data is filtered inside the sandbox instead of returning to context each time?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "claude-api-25",
+      "scenario": "A developer wants to configure an Anthropic-hosted Managed Agent with an isolated sandbox environment from scratch.",
+      "user_query": "/claude-api managed-agents-onboard",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-26",
+      "scenario": "An engineer has an existing evaluation set and wants to iteratively tune prompt wording and few-shot examples to improve the passing score.",
+      "user_query": "/claude-api hillclimb",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-27",
+      "scenario": "A developer calling Sonnet 5.5 is getting validation errors when passing `budget_tokens` and wants to know the modern way to control reasoning depth.",
+      "user_query": "My API request to claude-sonnet-5-5 failed with an error on budget_tokens. How do I configure thinking and effort on current Sonnet models?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-28",
+      "scenario": "A developer wants to intercept LLM refusals (due to safety filters) and gracefully fail over to an alternative model without rewriting request handling.",
+      "user_query": "When the model refuses a request due to safety policies, how do I inspect stop_details and set up server-side fallbacks?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "claude-api-29",
+      "scenario": "A PHP backend engineer needs to set a hard session spending cap of $20.00 on a Managed Agent session using the official SDK.",
+      "user_query": "How do I configure a session budget with max_list_cost in PHP when creating a Managed Agents session?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "claude-api-30",
+      "scenario": "A developer wants to provide mid-turn instructions to guide an ongoing reasoning conversation without wiping the prompt cache prefix.",
+      "user_query": "How can I inject runtime operator instructions mid-conversation without modifying the top-level system prompt or breaking cache hits?",
+      "explicitness": "implicit"
+    }
+  ]
+}

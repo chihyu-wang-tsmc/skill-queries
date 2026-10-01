@@ -1,0 +1,188 @@
+{
+  "skill": "pdf",
+  "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:30:49+00:00",
+  "scenarios": [
+    {
+      "id": "pdf-01",
+      "scenario": "A financial analyst has a quarterly earnings report in PDF format and needs to extract the multi-page financial tables into an Excel spreadsheet for modeling.",
+      "user_query": "Can you extract all the balance sheet and cash flow tables from Q3_Report.pdf and save them into a clean Excel file?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-02",
+      "scenario": "An accountant received several scanned paper receipts saved as digital files where text cannot be selected or copied, and needs the text transcribed for bookkeeping.",
+      "user_query": "I have these scanned receipt scans in my folder, but I can't search or copy any text from them. Can you run optical character recognition on all pages and give me the transcribed text?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-03",
+      "scenario": "An HR coordinator has an official interactive tax form and a JSON file with new hire details, needing to automate the form filling.",
+      "user_query": "I need to fill out the fillable fields in fw4_form.pdf using the employee data from employee_104.json. Please generate the completed file as fw4_filled.pdf.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-04",
+      "scenario": "A legal clerk has a flat, non-interactive scanned intake form and needs text and checkmarks placed precisely onto the blank underlines.",
+      "user_query": "This onboarding questionnaire doesn't have interactive fields, just blank lines on the page image. Can you place 'Jane Doe' on the Applicant Name line and check the 'Full-time' box?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-05",
+      "scenario": "A paralegal is preparing a trial bundle and needs to combine several individual PDF exhibits into a single master document.",
+      "user_query": "Please merge exhibit_A.pdf, exhibit_B.pdf, and exhibit_C.pdf into a single document called master_exhibits.pdf in that exact order.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-06",
+      "scenario": "A high school teacher printed student progress reports into one massive 150-page file and needs each individual student page saved as its own file.",
+      "user_query": "I have one giant file containing 150 individual report cards. Can you split it so every single page becomes its own separate document named student_1, student_2, and so on?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-07",
+      "scenario": "An architect received an engineering drawing bundle where several landscape pages were scanned in portrait mode and need rotation.",
+      "user_query": "Pages 3 and 7 in structural_drawings.pdf are upside down, and page 5 is rotated 90 degrees counter-clockwise. Can you fix their orientations and save a corrected copy?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-08",
+      "scenario": "A graphic designer needs to recover high-resolution product photos embedded inside a marketing brochure document without taking manual screenshots.",
+      "user_query": "Our agency lost the raw image files for the summer catalog. Is there a way to extract all original embedded photos directly out of summer_catalog_final at full quality?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-09",
+      "scenario": "A healthcare administrator must secure a sensitive patient report with a password before sending it via email.",
+      "user_query": "Please encrypt patient_history.pdf with the user password 'MedSecure2024' and owner password 'AdminPass99' using AES encryption.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-10",
+      "scenario": "A compliance officer has a password-protected vendor audit document and wants the security restrictions stripped using the known password.",
+      "user_query": "I have the password for this locked audit file—it's 'AuditSecure123'. Can you remove the encryption completely so my team doesn't have to enter the password every time they open it?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-11",
+      "scenario": "A data scientist wants to stamp a bold 'CONFIDENTIAL' watermark across every page of an internal analytics document.",
+      "user_query": "Can you apply watermark.pdf diagonally across all pages of quarterly_insights.pdf and export the result as confidential_insights.pdf?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-12",
+      "scenario": "A sales operations lead has a JSON payload of invoice line items and needs a professional, styled two-page customer invoice document generated from scratch.",
+      "user_query": "I need to generate a polished customer invoice from this order JSON data, complete with our company header, an itemized pricing table with alternating row colors, and a grand total footer.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-13",
+      "scenario": "A chemical engineer writing a technical documentation script using ReportLab needs chemical formulas rendered properly with subscripts instead of black boxes.",
+      "user_query": "I'm generating a chemistry report PDF in ReportLab, but H₂O and CO₂ are showing up as black rectangular glyph errors. How do I fix the XML markup tags for subscript formulas in Paragraph objects?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-14",
+      "scenario": "An archivist has digitized historical records that are currently just image scans and wants to make them full-text searchable by researchers.",
+      "user_query": "We have 40 pages of digitized 19th-century council minutes that are purely pictures right now. We need the text detected and embedded under the images so visitors can search keywords in their viewer.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-15",
+      "scenario": "A web developer is preparing a heavy 80MB document for web download and wants it linearized so users can view page 1 immediately while the rest loads.",
+      "user_query": "Can you optimize and linearize whitepaper_v2.pdf for fast web view streaming using qpdf, and compress any redundant objects?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-16",
+      "scenario": "An operations manager downloaded a corrupted monthly transaction summary that fails to open in standard document viewers.",
+      "user_query": "Our monthly ledger export file seems damaged—whenever anyone tries opening it, the reader throws a structural syntax error. Can you check and repair its internal structure?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-17",
+      "scenario": "A university student wants to extract text from a multi-column lecture syllabus while strictly preserving its original columnar visual layout.",
+      "user_query": "Run pdftotext with layout preservation on syllabus_advanced_econ.pdf and output the text to syllabus_layout.txt.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-18",
+      "scenario": "A real estate agent noticed a scanned closing agreement has wide scanner borders and black feed marks along the margins that need trimming.",
+      "user_query": "This signed closing agreement has huge 1.5-inch black scanner feed borders around every page. Can you crop 50 points off the top, bottom, and sides across all pages?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-19",
+      "scenario": "A software engineer working in Node.js needs to selectively extract pages 1, 3, and 5 from one agreement and append them to another contract.",
+      "user_query": "Using pdf-lib in JavaScript, how do I load agreement_A.pdf and agreement_B.pdf, extract pages 0, 2, and 4 from B, and append them into A before saving?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-20",
+      "scenario": "A talent recruiter has 50 applicant resumes in a directory and needs all the plain text dumped into corresponding text files for keyword scanning.",
+      "user_query": "I have a folder with fifty job application files. Can you loop through all of them, extract the complete text content from each one, and save matching .txt files in the output directory?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-21",
+      "scenario": "An event coordinator wants to inspect a newly created event registration form to discover the exact names and types of all interactive fields.",
+      "user_query": "Can you run a check on conference_registration.pdf to see if it has fillable form fields, and output the field IDs and bounding boxes to a JSON file?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-22",
+      "scenario": "A logistics coordinator received shipment manifests where tables have complex overlapping cell borders and wants the tabular data parsed accurately.",
+      "user_query": "Here is today's cargo manifest document. The tables have weird borders, but I need the tracking numbers, container weights, and destination ports cleanly parsed into a structured list.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-23",
+      "scenario": "A security analyst is investigating a suspicious document and needs to inspect its creator, producer, creation date, and embedded metadata.",
+      "user_query": "Please extract all document metadata (Title, Author, Creator, Producer, CreationDate) from suspicious_invoice.pdf using pypdf.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-24",
+      "scenario": "A clinical research associate needs to extract only the methodology chapter (pages 45 through 68) from a 300-page trial dossier.",
+      "user_query": "I only need pages 45 to 68 from our 300-page trial dossier. Can you pull out just that range and save it as methodology_section?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-25",
+      "scenario": "An office assistant has a flat PDF application form and needs to extract its structural lines, text labels, and checkboxes to prepare an annotation overlay.",
+      "user_query": "Please run extract_form_structure.py on vendor_app_flat.pdf to generate form_structure.json so we can map out coordinates for filling it.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-26",
+      "scenario": "A marketing manager needs high-resolution image snapshots of each slide from a 12-page presentation deck for a social media carousel.",
+      "user_query": "I need every slide in presentation_deck rendered as a 300 DPI PNG image file so we can upload them directly to our marketing blog.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-27",
+      "scenario": "A billing manager wants to restrict an invoice template so recipients can view it but cannot modify content or print it.",
+      "user_query": "Can you use qpdf to encrypt client_invoice_template.pdf with 256-bit encryption, setting print permissions to none and modify permissions to none?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-28",
+      "scenario": "A journal editor needs to collate two separate drafts, taking the odd pages from version 1 and interleaving them with the even pages from version 2.",
+      "user_query": "I have two drafts of the manuscript. I need to construct a new document by taking pages 1, 3, and 5 from draft_A and inserting pages 2, 4, and 6 from draft_B between them.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pdf-29",
+      "scenario": "A legal assistant extracted coordinates from a PDF form and wants to validate that the bounding boxes don't collide before running the annotation script.",
+      "user_query": "I just drafted fields.json for the affidavit form. Can you run check_bounding_boxes.py on it to ensure there are no overlapping boxes or undersized fonts before we fill it?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pdf-30",
+      "scenario": "A restaurant owner has a structured list of daily specials and wants a clean, formatted single-sheet menu layout ready for printing.",
+      "user_query": "Here is our weekend brunch menu data with categories, item descriptions, and prices. Can you generate a printable 8.5x11 document with custom typography, clean dividers, and centered headers?",
+      "explicitness": "implicit"
+    }
+  ]
+}

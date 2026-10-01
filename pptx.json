@@ -1,0 +1,188 @@
+{
+  "skill": "pptx",
+  "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. If a .pptx or .potx file needs to be opened, created, or touched, use this skill.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:31:59+00:00",
+  "scenarios": [
+    {
+      "id": "pptx-01",
+      "scenario": "A startup founder has a 3-page markdown executive summary and wants to pitch angel investors.",
+      "user_query": "Can you take my executive summary doc and turn it into a crisp 7-slide investor pitch deck with key market stats and our business model?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-02",
+      "scenario": "A marketing director needs to update quarterly performance figures in an existing corporate presentation.",
+      "user_query": "Please open q3_marketing_report.pptx and update slide 4's conversion rates with the new numbers from our spreadsheet.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-03",
+      "scenario": "A data analyst has a CSV containing monthly active user cohorts and wants a clean visual breakdown for the leadership meeting.",
+      "user_query": "I need a 4-slide visual presentation showing our MAU retention cohorts, complete with native stacked bar charts and bold stat callouts.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-04",
+      "scenario": "An executive assistant needs to extract talking points from a deck before a board meeting.",
+      "user_query": "Extract all the speaker notes from board_meeting_nov.pptx and format them into a chronological bulleted list for the CEO.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-05",
+      "scenario": "A management consultant wants to build a polished recommendation deck following a strategic audit.",
+      "user_query": "Draft a 10-slide strategy deck based on my interview findings: cover current bottlenecks, proposed 3-phase roadmap, and projected ROI.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-06",
+      "scenario": "A developer needs to validate that a programmatically generated PowerPoint file won't crash Office.",
+      "user_query": "Run a schema and relationship validation check on quarterly_earnings_generated.pptx against the original baseline.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-07",
+      "scenario": "A sales lead received a client's requirements presentation and wants a quick summary of scope and budget.",
+      "user_query": "Read client_briefing_deck.pptx and pull out all deliverables, timelines, and budget constraints into a concise email summary.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-08",
+      "scenario": "A university professor has drafted lecture notes on cell biology and needs presentation visuals for class.",
+      "user_query": "Turn these lecture notes on cellular respiration into a structured visual slide set with comparison columns and process flows.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-09",
+      "scenario": "A corporate trainer wants to inspect all layouts available in a company template before building training modules.",
+      "user_query": "Generate a visual thumbnail grid of all slides in company_master_template.potx so I can choose which layouts to duplicate.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-10",
+      "scenario": "A product manager needs to showcase next quarter's feature roadmap to internal stakeholders.",
+      "user_query": "Create an executive product roadmap deck for Q1. Use a dark theme with 2x2 feature grids, milestone timelines, and clear status badges.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-11",
+      "scenario": "A financial analyst encounters a corrupted chart error when opening a coworker's presentation.",
+      "user_query": "My financial_forecast.pptx is throwing an XML error when opening in PowerPoint. Can you inspect the chart XML and fix the broken axis IDs?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-12",
+      "scenario": "A sustainability officer has carbon emission audit data and needs to report findings to the board.",
+      "user_query": "Build a concise sustainability briefing deck highlighting our Scope 1 and 2 emissions reductions using large metric callouts and a clean forest-green theme.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-13",
+      "scenario": "An office manager found an old sales archive file from 2003 that needs to be updated for modern editing.",
+      "user_query": "Convert this legacy sales_pitch_2003.ppt file into a modern .pptx deck so we can edit it with our current tools.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-14",
+      "scenario": "A software architect wants to explain microservice migration steps at an engineering all-hands.",
+      "user_query": "Take this architecture RFC markdown file and turn it into a 5-slide technical presentation detailing the phase-by-phase migration plan.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-15",
+      "scenario": "A regional ops director needs to combine two regional decks into a single consolidated file.",
+      "user_query": "Merge ops_east_region.pptx and ops_west_region.pptx into a single deck, preserving the master layout and removing any duplicate summary slides.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-16",
+      "scenario": "A growth marketer wants to quickly digest the contents of a competitor's webinar deck without opening PowerPoint.",
+      "user_query": "Scan competitor_webinar_slides.pptx and give me a slide-by-slide markdown breakdown of their pricing tiers and messaging strategy.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-17",
+      "scenario": "A recruiter needs to present quarterly hiring metrics and demographic stats to the leadership team.",
+      "user_query": "Create a 3-slide talent acquisition update with side-by-side department hiring goals versus actuals, plus big callout stats for time-to-hire.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-18",
+      "scenario": "A graphic designer wants to check a newly customized template for leftover dummy content and missing variables.",
+      "user_query": "Check client_custom_deck.pptx for any leftover placeholder text like 'Lorem ipsum' or unreplaced bracketed tags before we deliver it.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-19",
+      "scenario": "A medical researcher has clinical trial results in a text document and needs to present at a symposium.",
+      "user_query": "Prepare a 6-slide clinical trial readout from these raw trial notes, including patient demographics, efficacy comparison cards, and safety conclusions.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-20",
+      "scenario": "A real estate agency assistant needs to generate standalone slide images from a property portfolio for a web gallery.",
+      "user_query": "Convert luxury_listings.pptx into high-resolution JPEG images of each individual slide at 150 DPI.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-21",
+      "scenario": "An enterprise account executive is preparing an annual contract renewal presentation for a high-tier client.",
+      "user_query": "I need a personalized customer success review deck for Acme Corp showing their year-over-year ROI, usage stats, and upcoming enterprise features.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-22",
+      "scenario": "A legal paralegal needs to extract all text across dozens of evidentiary presentation slides for document discovery.",
+      "user_query": "Extract the full raw text from exhibit_d_presentation.pptx slide by slide, preserving the slide numbers as section headers.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-23",
+      "scenario": "A chief of staff needs to turn a 10-page CEO strategy memo into an executive slide deck for the board.",
+      "user_query": "Condense this CEO strategy memo into a 6-slide executive board presentation with bold takeaways, minimal text, and high visual contrast.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-24",
+      "scenario": "A brand manager wants to adapt a 4-person team layout slide down to 3 people without leaving awkward empty boxes.",
+      "user_query": "In pitch_master.pptx, duplicate slide 3 for the engineering team and delete the fourth team member card so the remaining three are properly spaced.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-25",
+      "scenario": "An event coordinator needs to build an agenda and speaker introduction slides for a two-day conference.",
+      "user_query": "Design an opening keynote presentation for our tech summit with a bold dark background, speaker profile cards, and a dual-track schedule breakdown.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-26",
+      "scenario": "A software engineer built a Node.js script using pptxgenjs and needs to ensure text boxes aren't overflowing visual bounds.",
+      "user_query": "Render preview images of output_deck.pptx to check for text overflow and shape misalignments across all slides.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-27",
+      "scenario": "A cybersecurity consultant needs to brief an executive committee on a recent vulnerability assessment.",
+      "user_query": "Create an incident post-mortem briefing deck: slide 1 incident overview, slide 2 attack timeline, slide 3 blast radius stats, and slide 4 mitigation steps.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-28",
+      "scenario": "A sales manager needs to clean up unused master layouts and orphaned media assets from a bloated sales template.",
+      "user_query": "Unpack sales_template_v4.potx, clean out any orphaned media or unused slide layouts, and repack it into a clean, minimal file.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "pptx-29",
+      "scenario": "A product lead needs to pitch an internal incubation project to the innovation council for budget approval.",
+      "user_query": "Generate a 5-slide internal pitch deck for Project Aurora: problem definition, target user personas, technical architecture, and funding request.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "pptx-30",
+      "scenario": "A quality assurance analyst needs to verify that the color palette and font choices in a deck meet corporate design standards.",
+      "user_query": "Inspect brand_guidelines_deck.pptx to make sure it uses safe fonts and verify that all accent shapes align with text box margins.",
+      "explicitness": "explicit"
+    }
+  ]
+}

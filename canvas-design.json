@@ -1,0 +1,188 @@
+{
+  "skill": "canvas-design",
+  "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:31:20+00:00",
+  "scenarios": [
+    {
+      "id": "canvas-design-01",
+      "scenario": "An indie game developer wants to create an abstract, high-craft promotional art poster for a retro-futuristic exploration game. They need both the visual design and the guiding design manifesto.",
+      "user_query": "I need an art poster for our game project. Could you write a design philosophy markdown file for a retro-futuristic aesthetic movement and then generate a high-resolution .png canvas poster inspired by brutalist space exploration?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-02",
+      "scenario": "A sound designer releasing an ambient drone album needs a striking visual piece for the cover art that conveys deep atmospheric pressure and analog tape decay without clichéd audio equipment illustrations.",
+      "user_query": "I'm releasing an ambient noise record called 'Sub-surface Drift'. Can you design an abstract visual piece that feels like deep atmospheric pressure, tape saturation, and vast empty space? Keep text strictly minimal.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-03",
+      "scenario": "A curator at an architectural foundation is organizing a retrospective on brutalist concrete monuments and requires an artistic exhibition poster alongside its design philosophy.",
+      "user_query": "Please generate a design philosophy .md and a pristine .pdf poster for an exhibition on monolithic concrete architecture. Use sculptural typography, massive color blocks, and heavy geometric tension.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-04",
+      "scenario": "A literary magazine editor wants a single-page visual art print capturing the quiet, surreal mood of Haruki Murakami's 'The Wind-Up Bird Chronicle' without drawing literal characters or birds.",
+      "user_query": "I want a museum-grade visual print meditating on deep dry wells, missing cats, and silent psychological weight. It should look like an intricate, abstract diagram from an imaginary discipline.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-05",
+      "scenario": "A digital gallery coordinator wants a museum-grade poster design and accompanying philosophical manifesto for an international algorithmic art festival.",
+      "user_query": "Create a design philosophy document and an art poster in .pdf format for our generative art symposium. I want it to look meticulously crafted, with clinical reference markers and rigorous repeating patterns.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-06",
+      "scenario": "A quantum physics researcher wants an elegant, framed visual print for their lab wall that communicates quantum entanglement through abstract geometric structures.",
+      "user_query": "I want an art piece for our institute's hallway that captures non-local quantum state correlation. Make it look like a systematic scientific chart or schematic from another dimension, using strict geometry and minimal labels.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-07",
+      "scenario": "A specialty coffee roaster wants a three-page coffee table publication spread in PDF exploring the chromatic and spatial relationships of high-altitude terroir and fermentation.",
+      "user_query": "I'd like to create a 3-page visual art suite as a .pdf file, plus the underlying design philosophy in markdown. The theme is high-altitude anaerobic fermentation, expressed through modular growth patterns and organic color systems.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-08",
+      "scenario": "An electronic musician is planning a limited run of silkscreen-style art prints for their modular synth live tour across European clubs.",
+      "user_query": "I need a graphic art piece for our Berlin synthesizer night. It shouldn't have giant gig promo text, just a master-level abstract composition of voltage grids, analog grain, and dense technical rhythm.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-09",
+      "scenario": "A typographer wants to experiment with Swiss modernist grid systems by producing a pure visual poster in PDF format using distinct typographic fonts and a design movement manifesto.",
+      "user_query": "Generate a 'Geometric Silence' design philosophy .md file and output a single-page .pdf poster. Use precise grid alignments, thin disciplined fonts from the canvas collection, and large quiet zones.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-10",
+      "scenario": "A botanist wants an artistic wall print for an herbarium exhibit that treats plant cellular structures with clinical reverence and abstract beauty.",
+      "user_query": "I need a gallery-quality visual artifact visualizing vascular cambium and xylem sap flow. Don't make a textbook illustration; make it a mesmerizing abstract composition of repeating cellular marks with sparse, clinical annotations.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-11",
+      "scenario": "A creative director at a branding agency needs to formulate a new aesthetic movement called 'Chromatic Silence' and render a standalone high-craft PNG art canvas.",
+      "user_query": "Please define the design philosophy for 'Chromatic Silence' in markdown, then create the visual canvas output as a downloadable .png. Focus on pure color fields, Josef Albers-inspired spatial tensions, and ultra-sparse typography.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-12",
+      "scenario": "An astrophysics graduate student wants a sophisticated, museum-quality poster celebrating the Cosmic Microwave Background radiation as an abstract visual artifact.",
+      "user_query": "I want to hang an art print in my apartment that subtly references the 2.7 Kelvin cosmic background radiation. It should feel like an ancient yet modern systematic observation chart with dense, delicate marks and quiet elegance.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-13",
+      "scenario": "A cultural festival organizer in Tokyo needs a fine art poster in PDF format along with an aesthetic philosophy document meditating on nocturnal subway transit.",
+      "user_query": "Could you create a design philosophy .md and a single-page .pdf visual art piece capturing Tokyo's midnight train network? Emphasize Japanese photobook paper textures, vast negative space, and razor-sharp typographic accents.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-14",
+      "scenario": "A boutique craft brewery wants an artistic visual label and collector's print inspired by hadal ocean trenches and immense hydrostatic pressure.",
+      "user_query": "We need a collector-tier visual print for our barrel-aged imperial stout called 'Mariana Trench'. I want an abstract, dark composition that evokes crushed depth, tectonic layering, and faint bioluminescent pulses.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-15",
+      "scenario": "A cinema programmer organizing an Andrei Tarkovsky retrospective wants a conceptual art poster in PDF subtly referencing 'Stalker' and 'The Zone'.",
+      "user_query": "I need a minimalist art poster in .pdf format and the accompanying design philosophy file for a Tarkovsky screening series. The art should subtly evoke the mystical geography of 'The Zone' using quiet, weathered spatial divisions.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-16",
+      "scenario": "A philosophy professor wants a framed art piece for their study interpreting Friedrich Nietzsche's concept of eternal recurrence through iterative visual forms.",
+      "user_query": "I want a high-craft graphic piece representing Nietzsche's eternal return. Express the concept through dense, cyclical geometric patterns and mathematical rhythm, with only a tiny whisper of typography.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-17",
+      "scenario": "A ceramic studio owner wants to create an artistic manifesto and matching downloadable PNG wall print based on wabi-sabi aesthetics and raw clay textures.",
+      "user_query": "Create an 'Analog Meditation' design philosophy .md and export a matching .png art canvas. The artwork should reflect raw kiln heat, natural clay ash, unglazed earth, and generous breathing room.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-18",
+      "scenario": "A cybersecurity conference organizer wants a signature visual print that depicts asymmetric key cryptography as an intricate abstract schematic.",
+      "user_query": "We want a collectible visual artifact for our cryptography summit. Turn the mathematics of public-private key exchange and prime factorization into an exquisite, abstract scientific diagram that rewards close inspection.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-19",
+      "scenario": "An audio hardware manufacturer wants a multi-page PDF visual design booklet exploring acoustic wave interference patterns and architectural acoustic spaces.",
+      "user_query": "Please generate a 2-page .pdf art document plus a design philosophy file exploring the physics of acoustic resonance. Ensure every detail screams master craftsmanship, with pristine margins and disciplined line weights.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-20",
+      "scenario": "An independent theater director needs a minimalist teaser poster for a production of Samuel Beckett's 'Waiting for Godot' that avoids literal trees or hats.",
+      "user_query": "I need a teaser visual piece for Beckett's Godot. It should communicate existential emptiness and suspended time through sheer negative space, stark tension, and tiny, deliberate typographic marks.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-21",
+      "scenario": "A boutique fashion house lead needs to develop a visual philosophy and an accompanying PNG art canvas for an upcoming line named 'Metabolist Dreams'.",
+      "user_query": "Write the design philosophy for 'Metabolist Dreams' in a markdown document, and render an original visual poster canvas as a .png. Focus on modular structural units, organic growth grids, and clinical aesthetic precision.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-22",
+      "scenario": "A mathematician wants a visually stunning wall print mapping the distribution of Riemann zeta function non-trivial zeros as an imaginary celestial chart.",
+      "user_query": "I want a fine art canvas that treats the Riemann Hypothesis as a sacred scientific map. Build meaning through intricate repeated elements, delicate coordinate markers, and sophisticated tonal balance.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-23",
+      "scenario": "A jazz club proprietor wants an abstract visual poster in PDF format and a design philosophy file capturing the improvisational spirit of Thelonious Monk.",
+      "user_query": "Please write a design philosophy document and design a .pdf art poster inspired by Thelonious Monk's syncopated rhythm. Use bold, unexpected spatial divisions, rich color blocking, and sculptural typography.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-24",
+      "scenario": "A science fiction author wants a museum-grade visual print for their office wall visualizing the scale of a mega-engineering Dyson swarm.",
+      "user_query": "I want a high-concept art piece depicting the geometry of a Dyson swarm harvesting star energy. Treat it like an archival blueprint from a forgotten civilization with layered geometric patterns and ultra-clean spacing.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-25",
+      "scenario": "An interior designer for a luxury hotel needs a downloadable PNG graphic art piece and an aesthetic movement manifesto that embodies 'Concrete Poetry'.",
+      "user_query": "Please author a 5-paragraph design philosophy for 'Concrete Poetry' in .md format, then create the finished visual art poster as a .png file suitable for printing and framing in a modern luxury lounge.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-26",
+      "scenario": "An urban planning researcher wants an aesthetic visualization print representing 24-hour bicycle commuter trajectories as an abstract generative tapestry.",
+      "user_query": "Can you design a sophisticated, gallery-ready visual piece based on urban mobility flows? I want it to feel like a dense, layered historical diagram with delicate linework, rhythmic density, and minimal text.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-27",
+      "scenario": "An industrial design collective is launching an exhibition and needs a visual poster in PDF format along with an overarching 'Brutalist Joy' design philosophy document.",
+      "user_query": "Craft a design philosophy for 'Brutalist Joy' and generate a .pdf canvas poster. Make sure the artwork reflects expert craftsmanship, bold geometric playfulness, thin disciplined typography, and pristine margins.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-28",
+      "scenario": "A marine biologist wants a fine art print capturing the bioluminescent signaling of deep-sea siphonophores as an abstract scientific plate.",
+      "user_query": "I want an art piece exploring colonial siphonophores in the deep ocean. It should look like an analytical specimen chart drawn by an imaginary deep-sea cartographer, using dark gradients and systematic coordinate dots.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "canvas-design-29",
+      "scenario": "A contemporary dance company producer needs an art poster in PDF and a design philosophy markdown file that visualizes kinetic body momentum and gravity.",
+      "user_query": "Create a design philosophy .md and an art poster in .pdf format for a contemporary dance premiere on momentum and weight. Use dynamic spatial tension, sweeping geometric rhythm, and subtle typographic anchors.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "canvas-design-30",
+      "scenario": "A modern teahouse owner in Kyoto wants a minimalist art canvas to hang in the tearoom reflecting thermal convection and rising steam.",
+      "user_query": "I need a contemplative, master-crafted visual art piece for our modern tearoom. It should evoke rising vapor, thermal gradients, and quiet time using vast negative space, soft textures, and subtle geometric precision.",
+      "explicitness": "implicit"
+    }
+  ]
+}

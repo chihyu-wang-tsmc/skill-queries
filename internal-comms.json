@@ -1,0 +1,188 @@
+{
+  "skill": "internal-comms",
+  "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:32:04+00:00",
+  "scenarios": [
+    {
+      "id": "internal-comms-01",
+      "scenario": "An engineering manager needs to submit the weekly 3P update for the Core Infrastructure team to executive leadership before the Friday deadline.",
+      "user_query": "Can you draft our weekly 3P update for Core Infrastructure for Oct 7-14? We migrated 40% of our database clusters to Aurora and lowered p99 latency by 12ms. Next week we plan to finish the remaining 60% and run load tests. Blockers: waiting on SecOps approval for the production IAM role.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-02",
+      "scenario": "A product designer needs to share a quick weekly summary of accomplishments, upcoming priorities, and current roadblocks with cross-functional team leads.",
+      "user_query": "Hey, I need a quick 30-second bulleted update for the Design Systems pod covering this past week. Shipped the new checkout token library in Figma and audited mobile buttons. Next week we're tackling the dark mode contrast tokens. Main headache right now is waiting on the iOS team to review our color spec PR.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-03",
+      "scenario": "An enterprise sales director needs to format their team's weekly Progress, Plans, and Problems into the standard company 3P update format.",
+      "user_query": "Draft a 3P update for Enterprise Sales (Sept 18-25). Closed $1.2M in new ARR across 3 tier-1 accounts (Acme, Globex, Initech). Next week we're aiming to finalize the Wayne Enterprises contract and run 5 discovery calls. Problem is legal turnaround time on redlines is currently averaging 6 business days.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-04",
+      "scenario": "A growth marketing manager has messy notes from the week and needs a concise executive update for the growth squad covering results, next steps, and blockers.",
+      "user_query": "Turn my messy notes into a quick leadership-ready weekly update for the Growth Marketing team for this week: launched the Q4 paid referral promo (CTR up 18%, 450 new signups). Next week launching the reactivation email drip and finishing SEO landing pages. Big issue is our marketing budget dashboard in Looker broke after Monday's data pipeline refactor.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-05",
+      "scenario": "A customer support team lead needs to write their weekly 3P report for the VP of Operations following standard internal formatting guidelines.",
+      "user_query": "Please generate the 3P update for Tier-2 Support for May 12-19. We resolved 1,420 tickets and brought first response time down to 1.8 hours. Next week we plan to roll out automated routing for billing issues. Our main problem is 2 senior agents are out on medical leave, putting heavy pressure on weekend coverage.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-06",
+      "scenario": "A data platform lead needs to provide a structured weekly briefing covering what got done, what's coming up, and what is stalled.",
+      "user_query": "I need to post our weekly status in the leadership channel for Data Platform. We finished the Snowflake warehouse migration on time and deprecated legacy Redshift. Next week: rolling out dbt core v1.6 and onboarding the analytics team. Blocked because we still don't have budget approval for Fivetran connector licenses.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-07",
+      "scenario": "A release manager needs to submit a formal 3P update for the Mobile App Release squad covering weekly release milestones.",
+      "user_query": "Write a 3P update for the Mobile Release squad covering Oct 20-27. Shipped iOS v4.12 to 100% rollout with zero crash reports. Next week submitting Android v4.13 to Google Play review. Problem: Apple rejected our metadata update twice due to screenshot dimension discrepancies.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-08",
+      "scenario": "An HR operations specialist wants a crisp weekly update for the People Ops team outlining completed tasks, next priorities, and bottlenecks.",
+      "user_query": "Can you put together a tight weekly summary for HR Ops for the week of June 3-10? We finished Q2 performance review cycle calibration and onboarded 14 new hires. Next week we are running the benefits open enrollment kickoff. Bottleneck: the Workday integration with our payroll provider is throwing sync errors on international contractors.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-09",
+      "scenario": "A chief of staff at a 1,500-person tech company needs to draft the monthly company-wide newsletter aggregating major updates across departments.",
+      "user_query": "Draft our monthly company newsletter for November. We closed our Series D ($85M led by Sequoia), crossed 100k active business accounts, promoted Sarah Lin to VP of Product, and our Hackathon winners built an AI code summarizer. Group it into clear emoji sections for Announcements, Priorities, and Leadership updates with a community-focused tone.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-10",
+      "scenario": "An internal comms manager needs to draft a company-wide digest for Slack and email highlighting recent executive town hall news, product launches, and press coverage.",
+      "user_query": "I need a full company digest for all 1,200 employees summarizing the past two weeks. Key highlights: we launched our SOC-2 compliant EU data residency, hit our Q3 ARR target of $40M, got featured in TechCrunch for our sustainability initiative, and the CEO hosted a town hall on our 2025 AI strategy. Keep it bulleted, lively, and use 'we' phrasing throughout.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-11",
+      "scenario": "A People & Culture director is preparing the quarterly company newsletter with sections covering leadership notes, priority progress, and social events.",
+      "user_query": "Please build our Q3 company newsletter. Key items: hired 45 new teammates, launched our Singapore hub, finished the annual compensation review, rolled out the new parental leave policy, and our annual volunteer week had 82% participation. Make sure to format it with the standard newsletter sections and bullet points.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-12",
+      "scenario": "A VP of Operations wants to assemble a comprehensive 20-bullet company round-up covering cross-functional milestones to be distributed in the #general Slack channel.",
+      "user_query": "I need a company-wide recap covering the last month for our 800-person staff. Group the bullets across Product Development, Go-to-Market, and People/Workplace. Include that we signed 8 new enterprise logos, shipped dark mode on web, opened the Chicago satellite office, and achieved ISO 27001 certification. Keep each bullet to 1-2 lines.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-13",
+      "scenario": "A communications coordinator needs to write the bi-weekly company newsletter following the internal format with specific emoji category headings.",
+      "user_query": "Write the bi-weekly company newsletter for all employees based on these highlights: CEO announced our path to profitability by Q4, engineering cut cloud spend by $180k/mo, marketing wrapped up UserConf2024 with 3,000 attendees, and our internal book club is reading 'Radical Candor'. Use our standard newsletter structure with emoji headers like megaphone and dart.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-14",
+      "scenario": "An executive assistant needs to compile an all-hands wrap-up digest to share in the main company Slack channel after a major corporate milestone.",
+      "user_query": "Can you summarize yesterday's All-Hands meeting into an all-company Slack broadcast? Covered: Q2 earnings beat expectations by 15%, we are opening a London office in September, the executive team approved summer Fridays starting next week, and our brand refresh goes live on the website next Tuesday. Include links placeholders where relevant.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-15",
+      "scenario": "A People Partner notices widespread confusion on Slack following a return-to-office announcement and needs to create an internal FAQ to clarify policies.",
+      "user_query": "Employees are asking a lot of questions in #general about the new hybrid policy. Can you draft an internal FAQ response list? Key questions: How many days are required in-office? (3 days/week starting Sept 1). Do team offsite days count? (Yes). What is the reimbursement policy for commuting? (Transit passes covered up to $150/mo). Format as concise Question/Answer pairs.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-16",
+      "scenario": "A workplace experience lead needs to summarize and answer the most common employee questions regarding an upcoming office relocation.",
+      "user_query": "There's massive chatter and confusion across Slack regarding moving to the Hudson Yards office next month. People want to know about parking passes, desk booking rules, guest access, and whether cafeteria lunches will still be subsidized. Can you produce a clean set of common questions and succinct 1-2 sentence answers to clarify these for the whole company?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-17",
+      "scenario": "A technical program manager needs an FAQ document to address developer confusion about an internal migration from Jira to Linear.",
+      "user_query": "Generate an internal FAQ for our engineering org regarding the Linear migration. Questions being asked: When will Jira become read-only? Will historical tickets and attachments be migrated? How do we link Linear issues to GitHub PRs? Who should we contact for workspace admin rights? Follow our standard company FAQ answer formatting.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-18",
+      "scenario": "An internal comms lead wants to address widespread Slack chatter and employee anxiety following an unexpected executive departure.",
+      "user_query": "Our Chief Revenue Officer stepped down unexpectedly yesterday and there are dozens of threads in Slack asking what this means for sales targets, who is interim lead, and if layoffs are coming. Can you synthesize these recurring questions and draft clear, reassuring answers based on the CEO's town hall remarks (CEO is interim lead, targets remain unchanged, zero layoffs planned)?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-19",
+      "scenario": "An IT security engineer needs to produce an official FAQ for all employees regarding the company-wide rollout of hardware security keys (YubiKeys).",
+      "user_query": "Draft an internal company FAQ on the mandatory YubiKey rollout. Cover: Why are we switching to hardware keys? What happens if I lose my key while traveling? Can I use my phone's Touch ID as backup? How do I configure it with Okta? Format with 1-sentence questions and 1-2 sentence answers.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-20",
+      "scenario": "A benefits specialist needs to draft a Q&A broadcast addressing common employee questions about changes to the 401(k) match and health insurance tiers.",
+      "user_query": "Open enrollment opened this morning and our Slack support channel is flooded. Everyone is asking whether the 401(k) company match increased to 5%, if vision is still bundled with dental, and how HSA rollovers work from last year. Can you turn these into a clear Q&A update for all staff to cut down on repetitive tickets?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-21",
+      "scenario": "A site reliability engineer must write a formal internal incident report communication after a 45-minute production outage on the payment gateway.",
+      "user_query": "I need to draft an internal incident report for the payment service outage today. Timeline: 14:02 UTC alerting fired on 500 errors, 14:18 root cause identified as expired TLS cert on the ingress controller, 14:47 renewed cert and restored traffic. Impact: ~3,200 checkout attempts failed. Next steps: automate certificate renewal alerts via PagerDuty. Keep it objective and clear for leadership.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-22",
+      "scenario": "A VP of Engineering wants to draft an all-hands written message announcing a significant organizational restructure across the backend and mobile squads.",
+      "user_query": "I need to write an internal announcement to the engineering department about our re-org into domain-driven squads (Payments, Discovery, Core). We want to explain the 'why' (reduce inter-team dependencies), introduce the new squad leads, explain that project assignments take effect Nov 1, and invite everyone to an open Q&A on Thursday. Tone should be transparent and energizing.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-23",
+      "scenario": "A facilities manager needs to draft an urgent internal communication regarding an unexpected water main break that shuts down the corporate headquarters.",
+      "user_query": "Draft an urgent internal company announcement for the Seattle HQ. A water main broke on floor 4 this morning. The building will be closed today and tomorrow (Thurs/Fri) for repairs. All Seattle employees should work from home. Critical badges for lab access are temporarily suspended. Contact facilities@company.com with emergency equipment needs.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-24",
+      "scenario": "A legal and finance lead needs to communicate an important policy change regarding business travel expense limits and software subscription approvals.",
+      "user_query": "We are updating our corporate expense policy starting next month. Per diem meal cap is moving to $85/day, economy airfare is mandatory for flights under 6 hours, and any SaaS tool over $50/mo requires VP pre-approval in Brex. Write a clear memo to all employees explaining the changes and linking to the new policy doc in Confluence.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-25",
+      "scenario": "A Chief Executive Officer is preparing an end-of-year leadership update to reflect on company achievements and outline strategic focus areas for the new fiscal year.",
+      "user_query": "Draft a CEO leadership update for our end-of-year internal comms. Topics: celebrated hitting $50M ARR and reaching free cash flow positivity; acknowledged the team's hard work through a tough macro environment; set 2025 company priorities around enterprise expansion and AI platform launch. Desired tone: inspiring, candid, appreciative.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-26",
+      "scenario": "A supply chain program manager needs to send a cross-functional project update regarding component supplier delays impacting hardware delivery dates.",
+      "user_query": "I need to send a project status update to the Hardware, GTM, and Finance teams regarding the Gen3 sensor manufacturing timeline. Due to a chip supplier delay in Taiwan, mass production is pushed back by 4 weeks to March 15. Air freight will be used to protect the April commercial launch date. Cost impact is +$45k. Keep it direct, structured, and action-oriented.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-27",
+      "scenario": "A security and compliance manager needs to post a status report to internal leadership regarding the readiness of the SOC-2 Type II audit.",
+      "user_query": "Please format a status report for executive leadership on our SOC-2 Type II audit progress. We are at 92% evidence collection across 85 controls. 7 controls remain open in HR (background checks) and IT (laptop encryption verification). Audit window closes Dec 15, and external auditors arrive Dec 18. Highlight key risks and actions needed by department heads.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-28",
+      "scenario": "A Product VP needs to announce the sunsetting and deprecation timeline of a legacy enterprise feature to the entire internal organization.",
+      "user_query": "I have to send an internal memo to Sales, CS, and Solutions Engineering announcing that we are sun-setting our Legacy Reporting Dashboard on June 30. We need to explain why (migrating to Custom Analytics), provide migration resources for customer accounts, outline the communication timeline for clients, and offer a training session for customer-facing reps next Tuesday.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "internal-comms-29",
+      "scenario": "A Customer Success VP needs to write an internal incident report summarizing a critical enterprise customer data sync failure and its customer impact.",
+      "user_query": "Create an internal comms incident summary for the leadership team. Yesterday, a bug in our sync connector caused 4 enterprise accounts (including Delta & Target) to have duplicate CRM records for 3 hours. Engineering patched the issue and backfilled clean data by 8 PM. Customer Success has reached out to all 4 account leads. Detail the customer impact, remediation steps, and proactive messaging guidelines for our AMs.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "internal-comms-30",
+      "scenario": "A head of talent acquisition needs to communicate updated hiring guidelines and prioritization rules to all hiring managers across the company.",
+      "user_query": "We are refining our hiring priorities for H2. I need a clear communication sent to all hiring managers and directors. Key points: technical hiring is focused exclusively on Senior Backend and AI/ML roles; all new job reqs must be pre-approved by the CFO; internal mobility applications will get first priority for open spots. Detail the new Greenhouse requisition approval workflow.",
+      "explicitness": "implicit"
+    }
+  ]
+}

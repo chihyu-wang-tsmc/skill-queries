@@ -1,0 +1,188 @@
+{
+  "skill": "docx",
+  "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', '.dotx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx or .dotx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:31:43+00:00",
+  "scenarios": [
+    {
+      "id": "docx-01",
+      "scenario": "A corporate legal associate needs to redline an NDA sent by an external vendor to revise liability caps and indemnification clauses.",
+      "user_query": "I need to redline vendor_nda.docx. Please change the liability cap in Section 8 from $50,000 to $500,000 and insert mutual indemnification under Section 9, making sure the edits are tracked under the author name 'Legal Counsel'.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-02",
+      "scenario": "An executive assistant wants to generate a formal company policy memo with proper headers, footers, and US Letter margins to circulate internally.",
+      "user_query": "Could you generate a clean internal memo titled 'Hybrid Work Guidelines 2025' from CEO Jane Smith to all staff? Please format it with formal headers, a bottom horizontal rule under the header, 1-inch margins, and page numbers at the bottom right.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-03",
+      "scenario": "A technical writer has an old archived software manual in legacy binary Word format that needs modernization and conversion.",
+      "user_query": "We have an old legacy file called manual_v1.doc in the archive. Can you convert it to .docx and check if the heading hierarchy and table formatting stayed intact?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-04",
+      "scenario": "A compliance officer has received a revised corporate code of conduct full of markup and wants a clean, final version with all revisions approved.",
+      "user_query": "The board approved all proposed edits in annual_policy_markup.docx. Please accept all tracked changes and give me the clean final document.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-05",
+      "scenario": "A sales manager needs a professional pricing breakdown table with specific column widths and dot-leader tabs connecting line items to amounts.",
+      "user_query": "Please build a service pricing schedule document for Client Alpha. I need a table with custom column widths showing 5 deliverables, and under that, a summary list using dot leaders between the package names and their final dollar amounts.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-06",
+      "scenario": "An HR specialist wants to leave review comments on specific paragraphs of an updated employee handbook draft.",
+      "user_query": "Can you add a comment on Section 4.2 of employee_handbook.docx saying 'Please verify this against state sick leave statutory requirements' and output it as handbook_reviewed.docx?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-07",
+      "scenario": "A project manager needs to generate a monthly status report deliverable in Word format, featuring landscape pages for wide gantt charts and summary tables.",
+      "user_query": "I need a monthly progress report created as a .docx file. The executive summary should be portrait, but section 3 has a wide milestones table so that section needs to switch to landscape orientation.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-08",
+      "scenario": "An academic researcher needs to extract and read the main text and headings from a collaborator's research proposal draft to write an executive summary.",
+      "user_query": "Can you parse through proposal_draft_final.docx in my workspace, pull out all the key findings and methodology text, and summarize the main objectives for me?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-09",
+      "scenario": "A commercial property manager is preparing a multi-page commercial lease agreement and needs formatted numbered clauses and signature blocks.",
+      "user_query": "Create a 4-page commercial lease agreement for Unit 402 with structured numbered sections (1.0 Premises, 2.0 Term, 3.0 Rent), formal bulleted tenant covenants, and two side-by-side signature blocks at the end.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-10",
+      "scenario": "A developer modified Word document XML directly and got an error when opening it in Office, needing schema validation and repair.",
+      "user_query": "I hand-edited word/document.xml inside contract_out.docx and now Word gives an XML parsing error. Can you validate it against the ISO/IEC 29500 schemas and fix the malformed run tags?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-11",
+      "scenario": "A financial analyst needs a quarterly earnings report document with alternating light gray shaded table rows and bold summary figures.",
+      "user_query": "Please compile our Q3 financial highlights into a formal quarterly review report. Make sure the financial tables have light gray clear shading on header rows, explicit column widths, and proper currency alignments.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-12",
+      "scenario": "A procurement manager needs to search and replace terminology in a draft supplier contract where text runs are fragmented across XML tags.",
+      "user_query": "In supplier_master_v2.docx, please replace every instance of 'Acme Logistics LLC' with 'Apex Global Freight Inc' across the entire document, making sure no fragmented text runs are missed in the underlying markup.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-13",
+      "scenario": "A hospital administrator wants to create a standardized medical records release form as a reusable Word template file.",
+      "user_query": "Could you generate a standardized template file medical_release_template.dotx with placeholder fields, standard hospital branding, and locked layout boxes for patient demographic info?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-14",
+      "scenario": "A marketing coordinator wants to embed high-resolution product images and bulleted feature lists into an existing product sheet document.",
+      "user_query": "Take product_overview.docx, insert hero_shot.png right under the main title heading with proper dimensions, and replace the plain text list under Features with proper bullet points.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-15",
+      "scenario": "A management consultant is delivering a 25-page strategy deck summary and needs an automatically generated Table of Contents linked to Heading 1 and Heading 2 styles.",
+      "user_query": "Create an executive strategy document in .docx format with a formal cover page, an automated Table of Contents showing Heading levels 1 to 3, and sequential page numbering starting on page 2.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-16",
+      "scenario": "An operations lead needs to check who added specific tracked deletions in a standard operating procedure document before finalizing it.",
+      "user_query": "Look at sop_warehouse_v3.docx and list all the tracked deletions in the safety protocol section along with the author name and date each change was made.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-17",
+      "scenario": "A startup founder needs an investor summary document formatted with modern corporate typography, callout boxes, and custom page margins.",
+      "user_query": "I need a 2-page executive summary document created for Seed round investors. Please include our company vision, a 2-column market comparison section, key metrics in a styled box, and our funding ask at the end.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-18",
+      "scenario": "A senior legal partner needs to reply to a specific comment thread in a master services agreement draft.",
+      "user_query": "In msa_revision.docx, add a threaded reply to comment ID 2 saying 'We agree to the 30-day notice period' and save the updated file as msa_revision_answered.docx.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-19",
+      "scenario": "A university professor has received 20 student paper submissions and wants to verify word counts and heading structure across all submissions.",
+      "user_query": "I have term_paper_smith.docx and term_paper_lee.docx in my project folder. Please inspect both files, extract the body paragraphs excluding references, and tell me the exact word counts and outline structures.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-20",
+      "scenario": "An archivist needs to batch convert older .doc files from a legacy system into valid modern docx packages.",
+      "user_query": "Please convert minutes_1998.doc and minutes_1999.doc to .docx using headless LibreOffice and ensure the generated packages pass standard validation.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-21",
+      "scenario": "A product manager wrote a product requirements document in Markdown and needs it formatted into a company-standard Word document with tables and callouts.",
+      "user_query": "Here is my specs.md file. Can you convert it into a polished .docx specification document with custom heading styles, styled tables for user stories, and a formal title section?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-22",
+      "scenario": "An internal auditor wants to review the full revision history of an audit finding report by checking visual snapshots of pages before and after edits.",
+      "user_query": "I need to visually inspect audit_findings_draft.docx. Can you render the pages to images so I can check how the headers, footers, and redlined tables look across all 10 pages?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-23",
+      "scenario": "A grant writer needs to prepare an NIH research narrative document matching strict formatting criteria: Letter size, 0.5-inch margins, and specific numbering levels.",
+      "user_query": "Please format this research narrative with exact 0.5-inch margins on all sides, US Letter paper dimensions, numbered section headings (1.1, 1.2, 1.2.1), and no extra trailing spacing after paragraph breaks.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-24",
+      "scenario": "A journalist wants to search through a recorded interview transcript file to pull exact quotes related to antitrust investigations.",
+      "user_query": "Open transcript_interview_feb12.docx and extract all paragraphs where the speaker discusses 'monopoly power' or 'regulatory scrutiny' along with the preceding timestamp.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-25",
+      "scenario": "An event coordinator needs a banquet seating chart document laid out horizontally across multiple pages with cleanly aligned table grids.",
+      "user_query": "Generate a multi-page landscape document for the Gala Seating Plan. Each page should contain three side-by-side table lists showing Table Number, Guest Names, and Dietary Requirements with explicit column widths.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-26",
+      "scenario": "A corporate secretary needs to generate board meeting minutes with formal signature lines and continuous header rules.",
+      "user_query": "Create our official Board of Directors Meeting Minutes for October 24th. Include a formal header with meeting date and attendees, numbered resolutions, and three signature blocks separated by explicit page breaks where needed.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-27",
+      "scenario": "A quality assurance engineer is writing automated docx export tests and needs to verify that the generated package adheres to Open Packaging Conventions and WordprocessingML schemas.",
+      "user_query": "Run the validate.py script against generated_report.docx to verify there are no schema violations in word/document.xml or [Content_Types].xml.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-28",
+      "scenario": "A freelance copywriter needs to deliver a brand voice guidelines document formatted with primary brand colors, typography hierarchy, and examples.",
+      "user_query": "I need to deliver a Brand Style & Voice Guide for a client. Can you format the content into a multi-page document with dark navy section headers, bulleted 'Do and Don't' lists, and stylized callout boxes?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "docx-29",
+      "scenario": "A contract specialist needs to unpack a vendor's counterparty docx file, merge text runs, and insert clean redline additions and deletions.",
+      "user_query": "Unpack master_agreement_counterparty.docx, run merge_runs.py so the clauses aren't fragmented, and insert a tracked insertion under author 'Procurement' adding a 45-day payment term in Section 6.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "docx-30",
+      "scenario": "A government affairs liaison needs to format a legislative briefing document with DXA-precise margins and official letterhead layout.",
+      "user_query": "Please prepare a formal 3-page policy brief titled 'Infrastructure Investment Outlook'. It needs exact 1-inch margins (1440 DXA), a bottom border on the title header, bulleted statutory citations, and dot-leader index numbers on the summary page.",
+      "explicitness": "implicit"
+    }
+  ]
+}

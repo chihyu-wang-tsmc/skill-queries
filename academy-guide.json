@@ -1,0 +1,188 @@
+{
+  "skill": "academy-guide",
+  "description": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropic's learning hub. Trigger on: \"how do I\", \"how can I\", \"getting started with\", \"what can Claude do\", \"teach me\", \"learn to use\"; questions about artifacts, projects, skills, plugins, connectors, MCP; requests about rolling Claude out to a team, class, or organization; and any ask for training materials, onboarding content, or learning resources. Use it when the user is learning how to use a feature or product — not when they are mid-task and just want the task done. This skill composes with other skills: after consulting product documentation to answer how a Claude feature works, also check here for a matching course or tutorial — a docs-grounded answer and an Academy recommendation belong together. Only recommend on a strong match; never invent Academy content.\n",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:31:12+00:00",
+  "scenarios": [
+    {
+      "id": "academy-guide-01",
+      "scenario": "A marketing manager is new to Claude and wants to understand how the Artifacts feature works so her team can start building reusable interactive components.",
+      "user_query": "How do Artifacts work in Claude, and how can I get started using them?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-02",
+      "scenario": "A software engineer heard about Anthropic's Model Context Protocol (MCP) and wants to learn how to connect custom tools and external data sources to Claude.",
+      "user_query": "I want to learn how to build tools using MCP. Where can I find a structured guide or tutorial on Model Context Protocol?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-03",
+      "scenario": "An operations lead at a tech startup is rolling out Claude across the entire company and needs structured onboarding material for employees.",
+      "user_query": "We are rolling out Claude Enterprise across our company next week. What official training materials or courses can we give our employees to get up to speed?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-04",
+      "scenario": "A non-technical product manager wants to understand how Projects in Claude can help maintain shared project context across multiple chats.",
+      "user_query": "Can you explain how Projects work in Claude? I want to teach my team how to organize custom instructions and reference docs.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-05",
+      "scenario": "A data analyst wants to understand how to effectively write prompts for Claude to produce reliable tabular data and analysis.",
+      "user_query": "How can I get better at prompt engineering specifically for Claude? Are there official courses or interactive guides for this?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-06",
+      "scenario": "A developer wants to learn the basics of using Claude Code in their terminal to assist with CLI-based coding tasks.",
+      "user_query": "I just installed Claude Code on my machine. Is there a beginner tutorial or hub showing how to use it properly?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-07",
+      "scenario": "A university professor wants to introduce Claude to her undergraduate class and is looking for introductory AI fluency resources.",
+      "user_query": "I'm teaching a foundational course on AI for undergrads. Does Anthropic offer any AI fluency courses or certificate programs my students could take?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-08",
+      "scenario": "A customer success manager wants to know how to create reusable skills or instructions to automate weekly reporting workflows.",
+      "user_query": "How do I create custom skills or reusable workflows in Claude? Teach me the basics of how they work.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-09",
+      "scenario": "A business analyst wants to see real-world examples of Claude being applied to financial document synthesis and analysis.",
+      "user_query": "What can Claude do when analyzing long financial statements? Do you have any worked use cases or concrete examples I can explore?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-10",
+      "scenario": "A team lead wants to get their sales team trained on using Claude for drafting outbound communications and research.",
+      "user_query": "What training resources or learning paths exist for non-engineers learning to use Claude for everyday workplace tasks?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-11",
+      "scenario": "A backend engineer is looking to understand how to integrate Claude API with tool use and structured JSON outputs.",
+      "user_query": "How do I implement tool calling with the Anthropic API? Looking for practical tutorials or code examples.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-12",
+      "scenario": "A legal assistant wants to learn how to use Claude to compare contract clauses and extract key terms.",
+      "user_query": "Teach me how to use Claude for contract review. Are there step-by-step guides or use cases for legal workflows?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-13",
+      "scenario": "A new Claude user is confused about what features exist in the web interface and wants a tour.",
+      "user_query": "I just signed up for Claude Pro. What can Claude do, and where should I start learning about its key features?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-14",
+      "scenario": "A developer wants to learn about Claude Cowork and how multiple human and AI team members can collaborate.",
+      "user_query": "Can you explain Claude Cowork and share any available tutorials or resources on how it works?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-15",
+      "scenario": "An HR director wants to build an internal AI upskilling curriculum and needs Anthropic-certified material.",
+      "user_query": "Does Anthropic have any structured courses that offer completion certificates to help our staff build AI competency?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-16",
+      "scenario": "A technical writer wants to learn how to write system prompts that control Claude's tone and formatting.",
+      "user_query": "How can I master writing effective system prompts for Claude? Any comprehensive tutorials you recommend?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-17",
+      "scenario": "A solutions architect wants to explore Claude's developer platform to build custom enterprise integrations.",
+      "user_query": "Where can I find learning resources and developer guides for building on the Anthropic platform?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-18",
+      "scenario": "A healthcare administrator wants to know if there are introductory courses on using generative AI responsibly.",
+      "user_query": "Are there beginner-level courses from Anthropic on AI literacy and safe prompting practices?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-19",
+      "scenario": "A frontend developer wants to learn how to create and customize interactive React components inside Claude Artifacts.",
+      "user_query": "How do I build interactive visual widgets using Claude's Artifacts feature? Looking for a practical walkthrough.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-20",
+      "scenario": "A product lead wants to know how to connect Claude to Google Drive or Slack using native connectors.",
+      "user_query": "How do connectors work in Claude, and how can our workspace set them up?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-21",
+      "scenario": "A student wants to learn the fundamentals of prompt evaluation and testing when working with Claude.",
+      "user_query": "How do I systematically evaluate and test prompts with Claude? Is there an official lesson on prompt benchmarking?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-22",
+      "scenario": "A project manager wants to learn best practices for setting up Project Knowledge files without hitting context limitations.",
+      "user_query": "How should I structure files and documents inside a Claude Project for optimal retrieval? Any best-practice tutorials?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-23",
+      "scenario": "A designer wants to see practical examples of using Claude for user research synthesis and persona generation.",
+      "user_query": "Can Claude help with UX research synthesis? Show me how to set up this workflow or point me to a use case.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-24",
+      "scenario": "A software engineering manager wants to onboard 20 junior developers to Claude Code.",
+      "user_query": "We are introducing Claude Code to our dev team. Are there official tutorials or getting started guides for terminal workflows?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-25",
+      "scenario": "An executive assistant wants to learn how to use Claude to summarize long email threads and generate meeting briefs.",
+      "user_query": "Teach me how to use Claude for executive summaries and meeting prep. What are the best prompts and workflows?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-26",
+      "scenario": "A data engineer wants to learn how MCP servers communicate with local databases and Claude clients.",
+      "user_query": "How does MCP architecture work under the hood? I want to study a tutorial on creating my first MCP server.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-27",
+      "scenario": "A school administrator wants to assess whether teachers can learn basic Claude capabilities through self-paced modules.",
+      "user_query": "What self-paced learning paths does Claude offer for educators wanting to understand AI fundamentals?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-28",
+      "scenario": "A content strategist wants to learn how to maintain brand voice across different Claude conversations.",
+      "user_query": "How can I make Claude consistently adhere to our brand guidelines? Looking for a tutorial or guide on custom instructions.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "academy-guide-29",
+      "scenario": "A startup founder wants a broad overview of everything Claude's ecosystem offers to decide on adoption.",
+      "user_query": "Where can I explore all official Claude learning hubs, courses, and real-world use case repositories?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "academy-guide-30",
+      "scenario": "A support team lead wants to train tier-1 agents on how to use Claude side-by-side with ticketing tools.",
+      "user_query": "How can our customer support agents learn to use Claude efficiently for ticket summarization and triage?",
+      "explicitness": "implicit"
+    }
+  ]
+}

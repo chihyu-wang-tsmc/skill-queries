@@ -1,0 +1,188 @@
+{
+  "skill": "theme-factory",
+  "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:32:16+00:00",
+  "scenarios": [
+    {
+      "id": "theme-factory-01",
+      "scenario": "A sustainability manager has drafted an annual ESG report in Markdown and wants to style the resulting presentation slides with an earthy, natural look suitable for an environmental audit.",
+      "user_query": "I just finished the text for our 2024 ESG report slides. Can you style the deck with natural earth tones, deep greens, and appropriate typography for an environmental report?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-02",
+      "scenario": "A marketing consultant wants to browse all visual options before deciding how to style a client's strategy deck.",
+      "user_query": "Could you show me the theme showcase PDF so I can see what pre-built visual themes and color palettes are available?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-03",
+      "scenario": "An e-commerce boutique owner is preparing a spring catalog landing page and wants to use a specific preset theme.",
+      "user_query": "I'm building an HTML landing page for our new jewelry line. Please apply the Desert Rose theme styling, fonts, and hex colors to it.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-04",
+      "scenario": "A fintech founder has created raw HTML slides for an investor pitch and needs them to look trustworthy, corporate, and polished with navy and teal tones.",
+      "user_query": "Here are the raw slides for our Series A pitch. They look too plain right now—can you give them a polished, corporate maritime look with deep navy and teal accents?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-05",
+      "scenario": "An event coordinator is creating an invitation deck for an exclusive VIP midnight gala and wants high-contrast cosmic purples and modern typography.",
+      "user_query": "I need to style this event brief for our nocturnal product launch. It needs a dramatic nighttime vibe with deep purple, lavender, and cosmic styling.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-06",
+      "scenario": "A clinical research associate is preparing a summary deck for a pharmaceutical trial and wants a crisp, clean aesthetic using a known preset.",
+      "user_query": "Apply the Arctic Frost theme to my clinical trial presentation deck so the headers, body text, and colors match that preset.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-07",
+      "scenario": "A farm-to-table restaurant owner has drafted a business proposal document and needs a vibrant, organic garden visual style.",
+      "user_query": "I've written up our farm-to-table expansion proposal. Can you style this document with organic garden colors like fern green, marigold, and warm terracotta?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-08",
+      "scenario": "A DevOps lead needs to style an internal HTML tech architecture documentation site using a pre-defined theme.",
+      "user_query": "I have an HTML tech spec sheet for our cloud migration. Please style the page using the Tech Innovation theme with electric blue accents and dark gray backgrounds.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-09",
+      "scenario": "An architectural designer wants their project portfolio slides to have a stark, modern grayscale aesthetic with no distracting colors.",
+      "user_query": "Can you format my architecture portfolio slides? I want a contemporary, minimalist look using only charcoal, slate grays, clean white, and modern sans-serif typography.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-10",
+      "scenario": "A corporate training coordinator wants to review visual templates from the theme catalog before applying one to employee onboarding slides.",
+      "user_query": "Let me see the theme-showcase.pdf file so I can review the typography and palette options before picking one for my onboarding deck.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-11",
+      "scenario": "A coffee brand marketing director is preparing an autumn seasonal campaign presentation and wants cozy, rich warm tones.",
+      "user_query": "I have these 8 campaign strategy slides that look super boring in default black and white. Give them a rich, warm autumnal palette with mustard and terracotta tones.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-12",
+      "scenario": "A gaming startup founder is pitching a sci-fi indie title and wants to explicitly apply a preset theme.",
+      "user_query": "Please apply the Midnight Galaxy theme to my pitch deck artifact, including the FreeSans font pairings and deep purple/cosmic blue palette.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-13",
+      "scenario": "An HR director is building a slide deck for a mental health workshop and needs a custom soothing theme that isn't in standard corporate templates.",
+      "user_query": "I'm putting together a workplace wellness presentation. Could you create a custom theme based on soft eucalyptus green, warm oat, and muted lavender, and style my slides with it?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-14",
+      "scenario": "A wedding planner is drafting an event schedule document for a client and wants to use a specific preset theme.",
+      "user_query": "Take this wedding itinerary document and style it with the Desert Rose preset theme colors and typography.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-15",
+      "scenario": "A non-profit conservation director has generated a quarterly summary report and wants grounded forest styling.",
+      "user_query": "Can you restyle this quarterly conservation report? It needs earthy forest greens, sage accents, ivory background, and serif headers.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-16",
+      "scenario": "A growth marketer is finalizing a creative pitch deck and wants an energetic sunset aesthetic applied explicitly.",
+      "user_query": "I want to use the Sunset Boulevard theme on my marketing pitch slides. Please update the font families and color codes across all slides to match.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-17",
+      "scenario": "A commercial real estate agent has an investment prospectus document that needs an executive, trustworthy appearance.",
+      "user_query": "Here is the HTML summary of our downtown commercial property. Please apply a sleek, trustworthy color scheme with dark navy, teal accents, and clean modern typography.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-18",
+      "scenario": "A frontend developer generated an HTML report table and wants to style it using the Modern Minimalist preset.",
+      "user_query": "Can you apply the Modern Minimalist theme to this generated HTML report table? Make sure to use the exact hex codes for charcoal, slate gray, and light gray.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-19",
+      "scenario": "A cybersecurity firm lead needs to present a threat intelligence briefing with an aggressive, cutting-edge tech look.",
+      "user_query": "I need these threat intel slides restyled to look like a cutting-edge cyber command center—dark backgrounds, neon cyan highlights, electric blue primary accents, and bold tech fonts.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-20",
+      "scenario": "A product lead wants to create and apply a custom branded theme called 'Cyberpunk Neon' to their product roadmap deck.",
+      "user_query": "Generate a new custom theme called 'Cyberpunk Neon' featuring hot magenta (#ff007f), dark slate (#0f172a), and electric yellow (#ffe600), show it to me for review, and apply it to my roadmap artifact.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-21",
+      "scenario": "A bakery chain owner wants to style their quarterly franchisee review deck to feel warm, culinary, and artisanal.",
+      "user_query": "I have an operations deck for our pastry shops. Can you re-theme it with warm bakery colors like chocolate brown, warm beige, and golden yellow with bold clean headers?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-22",
+      "scenario": "A financial controller has completed a quarterly earnings slide deck and wants to use a specific preset theme.",
+      "user_query": "Apply the Ocean Depths theme to my quarterly earnings presentation. Use Deep Navy for backgrounds and DejaVu Sans Bold for headers.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-23",
+      "scenario": "A renewable energy analyst needs a clean tech visual treatment for a hydrogen fuel white paper presentation.",
+      "user_query": "Make this hydrogen energy briefing document look crisp and clinical. Use ice blue, steel blue, silver accents, and crisp white backgrounds.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-24",
+      "scenario": "A content strategist wants to explore available pre-set themes to see which one fits a new client's brand guidelines.",
+      "user_query": "What themes do you have in the theme-factory library? Can you list their names, intended use cases, and typography?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-25",
+      "scenario": "A children's education app creator needs a custom playful theme with pastel colors for an investor deck.",
+      "user_query": "Our investor deck for our kids' learning app is too dry. Could you build a custom playful theme with soft sky blue, pastel yellow, coral, and friendly rounded fonts, then apply it?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-26",
+      "scenario": "A wellness influencer is creating a downloadable PDF guide on herbal tea and wants to use a botanical preset.",
+      "user_query": "I'm releasing a tea blending guide. Please style the HTML export using the Botanical Garden theme with fern green, marigold accents, and DejaVu Serif Bold headers.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-27",
+      "scenario": "A luxury hotel manager wants an executive deck styled with rich autumn sunset colors.",
+      "user_query": "Please take these resort performance slides and give them a warm, inviting visual identity with burnt orange, coral, and deep purple contrast tones.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-28",
+      "scenario": "A startup founder wants to review the full theme showcase before applying a theme to their pitch deck.",
+      "user_query": "Display theme-showcase.pdf so I can inspect all 10 color palettes and typography pairings before choosing one for my deck.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "theme-factory-29",
+      "scenario": "A travel agency owner needs to format a safari tour proposal document with earthy, savannah-inspired tones.",
+      "user_query": "I'm putting together an itinerary document for a luxury safari. Can you style it with warm sand, clay, muted rose, and deep burgundy tones with clean modern fonts?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "theme-factory-30",
+      "scenario": "A history professor wants a custom retro-style academic theme for a lecture slide series.",
+      "user_query": "I need a custom theme generated called 'Vintage Academic' with olive green, burnt sienna, parchment cream, and FreeSerif typography. Show me the spec and apply it to my lecture slides.",
+      "explicitness": "explicit"
+    }
+  ]
+}

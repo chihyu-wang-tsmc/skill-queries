@@ -1,0 +1,188 @@
+{
+  "skill": "webapp-testing",
+  "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:32:31+00:00",
+  "scenarios": [
+    {
+      "id": "webapp-testing-01",
+      "scenario": "A frontend developer just finished modifying a React login form component and wants to ensure the form validation and error banners trigger properly in a headless browser test.",
+      "user_query": "Can you run a Playwright script against my local React app on port 3000 to test if submitting an empty form shows the required validation error?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-02",
+      "scenario": "A full-stack engineer built a Vite + React dashboard that isn't running yet. They want to check how the UI renders without manually spinning up dev servers.",
+      "user_query": "I need to verify that my dashboard UI loads properly. The frontend is in the current directory and runs with `npm run dev` on port 5173. Spin it up and take a screenshot of the homepage.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-03",
+      "scenario": "A QA tester needs to inspect browser console errors during navigation across a local single-page application to catch unhandled JavaScript exceptions.",
+      "user_query": "Use Playwright to open http://localhost:8080/checkout, click the checkout button, and collect any console errors or warnings printed in the browser logs.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-04",
+      "scenario": "A web designer created a standalone static HTML mockups folder (`./dist/index.html`) and wants to verify how the modal behavior works when clicking the trigger button.",
+      "user_query": "Open my static file at dist/index.html, click the #open-modal button, and check whether the modal overlay actually becomes visible in the DOM.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-05",
+      "scenario": "A backend developer has a FastAPI backend on port 8000 and a Next.js frontend on port 3000, and needs an end-to-end test verifying registration flow across both services.",
+      "user_query": "I want an end-to-end check for user signup. You'll need to run `uvicorn main:app --port 8000` for backend and `npm run dev` for frontend, fill out the registration form, and confirm redirection to /welcome.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-06",
+      "scenario": "A software engineer wants to automate an element discovery script to map out all clickable buttons and input fields on a freshly built internal web tool.",
+      "user_query": "Write a Playwright automation script to discover all interactive elements, buttons, and inputs on my local page http://localhost:4000/settings and print out their selectors.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-07",
+      "scenario": "A developer noticed that their client-side chart library intermittently crashes on load and needs to capture the browser logs during page initialization.",
+      "user_query": "Check http://localhost:5000/analytics in a headless browser and capture all console.log and console.error messages while the page finishes network requests.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-08",
+      "scenario": "A product manager wants visual proof that the new banner text styling was applied correctly on the staging build before deployment.",
+      "user_query": "Can you start the local dev server using `npm start` on port 3000, navigate to the landing page, and save a full-page screenshot to /tmp/landing.png?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-09",
+      "scenario": "A frontend engineer is debugging a race condition where data renders after several API calls and wants to verify the DOM state after network idle.",
+      "user_query": "Please run a Playwright script that visits http://localhost:3000/feed, waits for networkidle, and dumps the rendered HTML content.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-10",
+      "scenario": "A junior developer needs help automating form submission on a static template file to ensure client-side regex calculations work correctly.",
+      "user_query": "I have an HTML file at ./public/calculator.html. Could you simulate filling in 500 for amount and 5 for rate, click calculate, and read the resulting text in #result-box?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-11",
+      "scenario": "A developer needs to test an authentication flow that requires both a Flask API and an Angular frontend to be running simultaneously.",
+      "user_query": "Use with_server.py to launch `python api.py` on 5000 and `ng serve` on 4200, then test that logging in with test@example.com / password123 redirects to /dashboard.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-12",
+      "scenario": "A QA automation engineer wants to verify responsive navigation menus by collapsing the viewport and triggering the mobile hamburger icon.",
+      "user_query": "Open http://localhost:3000 in a headless browser with a 375x667 viewport, click the hamburger button `.mobile-nav-toggle`, and verify if `.nav-menu` gets the active class.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-13",
+      "scenario": "A web developer is troubleshooting why dropdown options are empty and wants to inspect the rendered DOM state after client-side hydration.",
+      "user_query": "Write a Playwright test to open my local dev instance at http://localhost:5173/dropdown-test, wait for JS execution to finish, and grab all options inside the #country-select element.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-14",
+      "scenario": "A student learning web development wants to check if their vanilla JS todo list app correctly adds list items when pressing the Enter key.",
+      "user_query": "Can you test my app in todo.html? Type 'Buy groceries' into #todo-input, hit Enter, and confirm that a new <li> element was appended to #todo-list.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-15",
+      "scenario": "A DevOps engineer needs an automated smoke test for a newly built container running a web UI on port 8080 before promoting it to production.",
+      "user_query": "Run a quick headless browser smoke test on http://localhost:8080: check that the title is 'Cluster Manager', the status indicator shows 'Healthy', and no uncaught JS errors are thrown.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-16",
+      "scenario": "A front-end developer is writing automated test suites and needs a template script using `sync_playwright` with headless Chromium to test checkout flows.",
+      "user_query": "Create and run a synchronous Playwright script in Python to test adding an item to cart on http://localhost:3000/products/1 and going through step 1 of checkout.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-17",
+      "scenario": "A UX designer wants to compare the visual appearance of dark mode vs light mode on a local dashboard page.",
+      "user_query": "Start `npm run preview` on port 4173, take a screenshot of http://localhost:4173/profile, then click the #dark-mode-toggle button and take another screenshot so I can compare them.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-18",
+      "scenario": "A software tester needs to verify that clicking a delete button opens a confirmation dialog and actually removes the record row from an HTML table.",
+      "user_query": "On my local server running at port 3000, go to /users, click the delete button on the first table row, accept the confirmation, and check that the row count decreases by 1.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-19",
+      "scenario": "A developer wants to capture all network failures and console warning outputs during a multi-page checkout flow.",
+      "user_query": "Using Playwright's console logging capabilities, navigate through http://localhost:8000/wizard/1 to /wizard/3 and log every browser console warning or error encountered along the way.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-20",
+      "scenario": "A backend engineer modified API responses and needs to verify if the frontend handles a 500 error gracefully by showing an error toaster message.",
+      "user_query": "My local app is at http://localhost:3000. When I click #sync-btn it triggers a failing endpoint; test this click and verify whether the element `.toast-error` appears within 3 seconds.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-21",
+      "scenario": "A tester has a set of static HTML email template files and wants to render each one and take full-page PNG screenshots to review formatting.",
+      "user_query": "I have static templates at email_1.html and email_2.html. Load them using file:// URLs in a headless browser and output screenshots to ./output/ for visual review.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-22",
+      "scenario": "A full-stack developer wants to test a file upload form component locally to make sure the progress bar updates and shows 100%.",
+      "user_query": "Can you test the file uploader on http://localhost:3000/upload? Attach the file test.csv to the file input, click the submit button, and verify the progress bar reaches 100%.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-23",
+      "scenario": "An engineer has an Express server script `server.js` and wants to run an automated UI verification against it, then shut down the server automatically when finished.",
+      "user_query": "Use the with_server.py script to spin up `node server.js` on port 8080 and execute an automation that verifies the search bar filters search results properly.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-24",
+      "scenario": "A developer wants to check whether an infinite scroll component correctly loads more cards when the user scrolls to the bottom of the page.",
+      "user_query": "Navigate to http://localhost:3000/gallery, scroll to the bottom of the page, wait for new items to fetch, and check if the total card count increased from 10 to 20.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-25",
+      "scenario": "A QA tester needs to verify that keyboard navigation (tabbing through inputs) functions properly on a local accessibility audit page.",
+      "user_query": "Run a Playwright script on http://localhost:5000/a11y-form that presses Tab through all inputs and verifies the focused element matches the expected tabindex sequence.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-26",
+      "scenario": "A frontend developer wants to make sure their cookie consent banner disappears and stores the consent cookie in localStorage upon clicking 'Accept'.",
+      "user_query": "Open http://localhost:3000, click '#cookie-accept', check that the cookie banner is hidden, and verify that localStorage has 'consent_given' set to 'true'.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-27",
+      "scenario": "A web performance engineer needs to measure DOMContentLoaded and page rendering stability on a locally hosted Vue app.",
+      "user_query": "Write a Playwright script to launch Chromium headless, go to http://localhost:8080/report, wait for networkidle, and record the DOM timing metrics.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-28",
+      "scenario": "A developer built a dynamic search filter and wants to inspect the DOM to discover which CSS selectors are assigned to the generated filter tags.",
+      "user_query": "Can you inspect the dynamic elements on http://localhost:3000/catalog after typing 'laptop' into the search field, and tell me the class names and selectors of the rendered filter tags?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "webapp-testing-29",
+      "scenario": "A software engineer wants to test an authenticated session state by setting browser cookies before navigating to a protected route.",
+      "user_query": "In Playwright, launch headless chromium, set an auth session cookie 'session_id=xyz123' for localhost:3000, navigate to /admin, and verify that the admin dashboard header is visible.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "webapp-testing-30",
+      "scenario": "A junior web developer wants to verify if clicking their custom accordion component toggles the `aria-expanded` attribute between true and false.",
+      "user_query": "Open ./accordion.html locally, click the second accordion header `.accordion-item:nth-child(2) button`, and check if `aria-expanded` changes to 'true'.",
+      "explicitness": "implicit"
+    }
+  ]
+}

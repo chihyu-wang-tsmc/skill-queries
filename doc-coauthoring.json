@@ -1,0 +1,188 @@
+{
+  "skill": "doc-coauthoring",
+  "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:31:41+00:00",
+  "scenarios": [
+    {
+      "id": "doc-coauthoring-01",
+      "scenario": "A principal backend engineer wants to write an RFC proposing migrating the checkout microservice to an event-driven architecture using Kafka, and needs a structured process to ensure architectural trade-offs are sound.",
+      "user_query": "I need to draft an RFC for moving our checkout service out of the monolith and over to Kafka. Can we co-author this doc together using a structured process?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-02",
+      "scenario": "A senior product manager has collected messy customer interview quotes and technical constraints and needs to synthesize them into a thorough product requirements document.",
+      "user_query": "I have a giant pile of raw notes, user interview snippets, and wireframe links for our next quarter's auto-tagging feature. I need to turn this into a thorough product requirement document.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-03",
+      "scenario": "A DevOps lead needs to create a formal Architecture Decision Record (ADR) justifying replacing Helm with Kustomize across 30 Kubernetes clusters.",
+      "user_query": "I'm starting a decision doc on why our infrastructure team should deprecate Helm in favor of Kustomize. Let's do a structured doc co-authoring session for it.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-04",
+      "scenario": "An engineering manager needs to persuade leadership to allocate budget for contractor engineers to resolve mounting technical debt.",
+      "user_query": "My VP asked for a formal written proposal by Friday explaining why we need a budget for 4 contractor engineers to address our legacy tech debt. I need help putting it together step by step.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-05",
+      "scenario": "A staff security engineer is initiating a technical specification for implementing mutual TLS and OAuth2 token exchange across internal microservices.",
+      "user_query": "I need to write a technical spec for implementing mTLS and OAuth2 service-to-service auth. Walk me through drafting this doc.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-06",
+      "scenario": "An HR director needs to document a new global remote work policy, covering tax implications, equipment stipends, and core working hours.",
+      "user_query": "Our company is shifting from hybrid to remote-first, and I need to write a comprehensive policy document covering stipends, tax nexus restrictions, and core hours. Where should we start?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-07",
+      "scenario": "A solutions architect at a B2B SaaS company is responding to a healthcare enterprise RFP and wants to build the technical response section by section.",
+      "user_query": "I need to draft a proposal document responding to a hospital network's RFP for our telemetry platform. Can we build this doc section by section?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-08",
+      "scenario": "A lead data scientist must prepare a model governance doc for the compliance department before putting a credit-risk ML model into production.",
+      "user_query": "I'm getting ready to deploy our new risk-scoring model, but compliance needs a thorough model governance document explaining the features, training data, bias mitigations, and fallback logic.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-09",
+      "scenario": "A tech lead has a messy Google Doc outlining a caching layer rewrite that confused leadership and wants to rewrite it from the ground up.",
+      "user_query": "We have an existing design doc in Google Docs for our caching layer rewrite, but it's messy and stakeholders find it confusing. I want to co-author a clean v2 with you.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-10",
+      "scenario": "A customer success director needs to standardize incident communication between support reps, account managers, and on-call engineers.",
+      "user_query": "Whenever a tier-1 customer has a critical outage, communication gets chaotic between support, on-call, and account managers. I want to write a clear standard operating procedure (SOP) to standardize the workflow.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-11",
+      "scenario": "A VP of Product is drafting an executive strategy memo for the board of directors regarding expanding into embedded fintech.",
+      "user_query": "I'm writing a multi-page strategy memo for the board on our expansion into B2B fintech. Let's work through the doc co-authoring workflow.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-12",
+      "scenario": "A systems administrator needs to create an actionable, step-by-step disaster recovery protocol for multi-region database failovers.",
+      "user_query": "We need a detailed disaster recovery spec for our PostgreSQL clusters in AWS, covering cross-region failover, RTO/RPO targets, and backup verification.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-13",
+      "scenario": "A QA lead wants to write a proposal document evaluating Playwright vs Cypress for the company's automated end-to-end testing suite.",
+      "user_query": "I want to draft a proposal doc advocating for Playwright over Cypress for our end-to-end test suite. Help me co-author it with clear trade-offs.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-14",
+      "scenario": "A startup founder needs to outline a concrete pilot agreement proposal detailing SLAs, single sign-on, and support commitments for enterprise prospects.",
+      "user_query": "I need to write a one-pager proposal for our enterprise pilot program that outlines SLA guarantees, custom SSO, and dedicated support.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-15",
+      "scenario": "An infrastructure architect wants to create an RFC for cross-region active-active database deployment and wants to test the doc for clarity before sharing.",
+      "user_query": "I'm kicking off an RFC for multi-region active-active Spanner deployment. Can you guide me through gathering context, outlining sections, and reader testing the doc?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-16",
+      "scenario": "A site reliability engineer has raw incident logs and Slack transcripts and needs to draft a blameless post-mortem report.",
+      "user_query": "We just had a major 4-hour outage caused by a runaway migration. I have the Slack transcripts, Datadog graphs, and timeline notes, and I need to turn this into a formal post-mortem doc.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-17",
+      "scenario": "A senior PM has a corporate PRD template and wants to draft the product requirements for a one-click mobile checkout experience.",
+      "user_query": "Let's create a PRD for our new one-click checkout experience. I have our company's standard PRD template ready.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-18",
+      "scenario": "A lead game designer needs to document crafting mechanics, item durability formulas, and inventory constraints for the engineering and balance teams.",
+      "user_query": "I need to put together a detailed game design document for our new crafting and item degradation mechanics so our gameplay programmers and economy designers have a clear spec.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-19",
+      "scenario": "A FinOps analyst needs to compare AWS cloud commitment discounts and formulate a decision document for the finance department.",
+      "user_query": "I'm preparing a decision doc comparing AWS Savings Plans vs Reserved Instances vs third-party auto-scalers like Cast AI. Let's co-author this.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-20",
+      "scenario": "A head of clinical operations is establishing a clinical workflow document for triage nurses reacting to real-time wearable cardiac alerts.",
+      "user_query": "I have to write an operational protocol document for how our triage nurses should handle abnormal ECG alerts from wearable patches.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-21",
+      "scenario": "An iOS mobile architect needs to author a phased migration spec for moving an enterprise app from legacy UIKit to modern SwiftUI.",
+      "user_query": "I need to write a technical spec for our phased UIKit to SwiftUI migration. Can you act as a co-author and help me refine it section by section?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-22",
+      "scenario": "A CMO needs an alignment document for the executive team to explain why the company must pivot its core brand messaging.",
+      "user_query": "I need to create a strategic proposal for our executive team explaining why we need to rebrand our SaaS platform from 'developer tool' to 'enterprise data pipeline'.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-23",
+      "scenario": "A data engineer wants to author an RFC to replace Delta Lake with Apache Iceberg across the data warehouse team.",
+      "user_query": "I'm writing an RFC on replacing our Delta Lake setup with Apache Iceberg. Can we start with the context gathering phase and draft this doc?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-24",
+      "scenario": "A university researcher needs to assemble a complex multi-institution grant proposal outlining methodology, preliminary results, and institutional impacts.",
+      "user_query": "I am compiling our 15-page research proposal for an NSF grant on quantum error correction algorithms, and I need to structure our methodology, prior work, and broader impacts sections clearly.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-25",
+      "scenario": "A platform engineer wants to write a structured decision doc evaluating self-hosted Backstage against managed internal developer portal solutions.",
+      "user_query": "I'm tasked with writing a decision doc on whether we should self-host Spotify Backstage or buy a commercial portal like Port. Guide me through the drafting workflow.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-26",
+      "scenario": "A supply chain director needs to draft an executive continuity document handling ocean freight route disruptions and regional buffer inventories.",
+      "user_query": "Given the recent shipping lane closures, I need to author a comprehensive contingency plan doc for our manufacturing logistics and buffer inventory targets.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-27",
+      "scenario": "A security architect is establishing mandatory static and dynamic security scanning gates across all CI/CD pipelines in a technical spec.",
+      "user_query": "I need to write up a technical spec establishing our Threat Modeling framework and mandatory SAST/DAST gating for all CI/CD pipelines. Let's do a structured doc co-authoring run.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-28",
+      "scenario": "A staff technical writer wants to overhaul the entire local development setup documentation because new engineers are encountering setup blockers.",
+      "user_query": "Our local development setup guide is out of date and new hires keep getting stuck on Docker and secrets configuration. I want to build a brand new, bulletproof engineer onboarding doc from scratch.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "doc-coauthoring-29",
+      "scenario": "A product operations manager is defining the requirements for automating customer refunds directly through Zendesk integrations.",
+      "user_query": "I'm starting a PRD for automating refunds in Zendesk using our new internal API. I'd like to use the structured co-authoring workflow to get this right.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "doc-coauthoring-30",
+      "scenario": "A Web3 protocol developer has designed a new smart contract staking interface and needs to draft a formal improvement standard document.",
+      "user_query": "I need to write an improvement proposal doc for a new token staking standard across EVM chains. I have the smart contract interfaces ready and need to structure the specification and rationale.",
+      "explicitness": "implicit"
+    }
+  ]
+}

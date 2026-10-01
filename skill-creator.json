@@ -1,0 +1,188 @@
+{
+  "skill": "skill-creator",
+  "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:32:16+00:00",
+  "scenarios": [
+    {
+      "id": "skill-creator-01",
+      "scenario": "A lead data scientist wants to create a new skill from scratch to standardize company-wide pandas data cleaning workflows across their team.",
+      "user_query": "I want to create a new skill called pandas-cleaner that enforces our team's dataframe cleaning standards, handles missing values consistently, and outputs type-annotated code.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-02",
+      "scenario": "A marketing manager just completed an extensive multi-step ad copy generation process in the chat and wants Claude to save the exact workflow for future use.",
+      "user_query": "The way you just broke down our buyer personas, tone matrix, and 3-variant copy structure was fantastic. Can you turn this whole workflow into something permanent so I don't have to explain the setup every time?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-03",
+      "scenario": "An AI platform engineer notices Claude rarely triggers their existing SQL optimizer skill unless directly named, and wants to optimize the frontmatter description.",
+      "user_query": "Our sql-optimizer skill has an undertriggering problem. Can we run the description optimization loop to generate trigger evals and find a description that activates more reliably?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-04",
+      "scenario": "A legal operations specialist has finalized a contract review folder and needs to bundle it into an installable package file.",
+      "user_query": "The contract-reviewer directory in my workspace has all the scripts and references ready. Please package it up into a .skill file so I can distribute it to our legal team.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-05",
+      "scenario": "A software engineer made major prompt changes to an internal code review assistant and wants to test if the new version actually outperforms the baseline across sample pull requests.",
+      "user_query": "I revised the prompt instructions in my code reviewer project. Can you spin up parallel test runs on 3 sample PRs—one using my new instructions and one baseline without them—and let me see the side-by-side results?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-06",
+      "scenario": "A product manager is experiencing formatting regressions in an existing JIRA ticket formatting skill and wants to iteratively fix it with test cases.",
+      "user_query": "Let's edit the jira-ticket-formatter skill. It keeps omitting acceptance criteria tables. Let's write a couple of test cases, run them, and inspect what's failing.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-07",
+      "scenario": "A bioinformatician wants to turn their complex genomic annotation workflow, shell scripts, and reference documentation into a structured agent capability with progressive disclosure.",
+      "user_query": "I have three python scripts for VCF filtering, a markdown guide on clinical significance tiers, and standard output templates. I want to bundle all of this together into a cohesive capability folder where the agent reads the main workflow first and pulls the reference docs only when needed.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-08",
+      "scenario": "A frontend developer is frustrated that Claude ignores their custom Tailwind styling configuration during general UI component generation requests.",
+      "user_query": "I have instructions set up for our design system in tailwind-styler, but whenever I ask 'make a user profile card component', you just use vanilla CSS instead of picking up my styling rules. How do we fix when this gets triggered?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-09",
+      "scenario": "A sales engineer wants to benchmark the execution time, token consumption, and assertion pass rate of their pitch deck creation skill.",
+      "user_query": "Please run a benchmark for pitch-deck-builder against the baseline across our 4 test scenarios in evals.json and aggregate the pass rates, time, and token deltas into benchmark.md.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-10",
+      "scenario": "An operations manager wants an unbiased evaluation between two competing prompt variations of their incident postmortem skill.",
+      "user_query": "I have two versions of the incident-reporter skill in iteration-1 and iteration-2. Can we run a blind comparison with an independent judge agent to determine which output is structured better?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-11",
+      "scenario": "A technical documentation lead wants to create an automated agent tool that checks and rewrites engineering docs according to the Google developer documentation style guide.",
+      "user_query": "I want to build a reusable capability for Claude to audit our markdown documentation against our internal style guide, catch passive voice, fix heading hierarchy, and output diffs.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-12",
+      "scenario": "A DevOps engineer ran test iterations for a Kubernetes diagnostic skill and wants to open the review interface to inspect the outputs.",
+      "user_query": "I just ran test cases for k8s-debugger. Can you run the eval viewer script so I can look at the generated diagnostic reports in my browser and leave feedback on each eval?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-13",
+      "scenario": "A recruiting coordinator had Claude screen 5 candidate resumes using custom scoring rubrics and wants to preserve the exact logic for upcoming hiring rounds.",
+      "user_query": "This resume scoring logic with the 4-tier rubric worked flawlessly on those engineering candidates. I need this to become a standard tool I can invoke for all future interview batches. Can we set that up?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-14",
+      "scenario": "An AI researcher wants to run description optimization on their financial analysis skill using the claude CLI background loop.",
+      "user_query": "Let's generate 20 trigger eval queries for financial-analyst—half positive and half near-misses—and run run_loop.py to train a higher-accuracy skill description.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-15",
+      "scenario": "A customer support lead has an instruction file that grew to over 900 lines, causing the model to get confused and hallucinate policy rules.",
+      "user_query": "My support-policy agent instructions have ballooned into a huge 900-line markdown file and the model keeps missing edge case rules. Can you help me reorganize it into a lean top-level file with modular reference files and scripts?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-16",
+      "scenario": "A security analyst needs to define quantitative assertions for their vulnerability scanning skill test cases.",
+      "user_query": "Let's draft the evals/evals.json for cve-summarizer. I need assertions checking whether CVSS scores are extracted, remediation steps are present, and output is strictly valid JSON.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-17",
+      "scenario": "A real estate analyst notices their valuation prompt produces inconsistent cap rates and wants to see why the model is struggling across test runs.",
+      "user_query": "When I run test properties through my commercial-appraisal workflow, the net operating income numbers are all over the place. Can you inspect the execution transcripts from the test runs and see if we need to bundle a deterministic calculation script?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-18",
+      "scenario": "A video game narrative designer wants to package their dialog branching skill folder into a distributable archive for colleagues.",
+      "user_query": "We finished testing dialogue-tree-builder. Run package_skill.py on the folder so I get the .skill file ready to share with our narrative writers.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-19",
+      "scenario": "A financial analyst wants to build a new skill from the ground up for extracting 10-K filing metrics into standardized financial models.",
+      "user_query": "I want to build a brand new skill called sec-10k-extractor. Let's interview me on the requirements, write the initial SKILL.md, and create a couple of test cases from real quarterly filings.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-20",
+      "scenario": "A research assistant created an academic literature synthesis guide but Claude never uses it when asked to summarize papers.",
+      "user_query": "I created a custom folder of instructions for synthesizing medical journal papers, but whenever I ask you 'summarize this trial paper', you give a standard generic summary instead of using my framework. Why is it being ignored and how do we fix the triggering?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-21",
+      "scenario": "A QA automation engineer wants to aggregate the grading and timing results of their test generator skill after three rounds of prompt tuning.",
+      "user_query": "Run aggregate_benchmark on the workspace iteration-3 directory for cypress-gen so we can compare pass rates and token duration against iteration-1 and iteration-2.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-22",
+      "scenario": "A growth marketing specialist spent two hours troubleshooting an SEO keyword clustering script and wants to convert the finished process into an agent capability.",
+      "user_query": "We finally have the exact step-by-step logic for scraping SERP results, extracting search intent, and grouping keywords into clusters. Capture this entire procedure into a permanent, reusable setup for our workspace.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-23",
+      "scenario": "A solutions architect wants to run an analyzer agent to understand why a competitor's prompt structure outperformed their AWS migration skill.",
+      "user_query": "The blind comparison picked version B as the winner for our aws-migrator eval. Can you run the post-hoc analyzer on both transcripts to tell me specifically what instructions made B succeed where A failed?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-24",
+      "scenario": "A newsletter editor wants to grade their automated layout generator against three sample markdown articles to verify formatting compliance.",
+      "user_query": "Here are three sample newsletter drafts. I want you to run them through our publication formatting guidelines, check if headers, callout boxes, and sponsor disclaimers match our checklist, and give me a grading report of what passed and failed.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-25",
+      "scenario": "A data engineer wants to update an installed skill in a read-only directory without changing its registered name.",
+      "user_query": "I need to update the installed skill etl-pipeline-helper. Please stage it in /tmp/etl-pipeline-helper, keep the exact same skill name frontmatter, apply the new spark SQL guidelines, and package it back up.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-26",
+      "scenario": "A customer success manager finds that their email response assistant frequently hallucinates refund escalation tiers and needs to refine the rules.",
+      "user_query": "Our support email triage assistant is still promising 100% refunds on enterprise tiers when it shouldn't. Let's edit the guidelines to explain why strict policy bounds matter and rerun our standard test cases to verify the fix.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-27",
+      "scenario": "A machine learning engineer wants to generate positive and negative test prompts to optimize triggering for a PyTorch debugging skill.",
+      "user_query": "Let's create the eval query set for pytorch-debugger. Generate 10 realistic queries that should trigger it and 10 tricky negative near-misses that involve Python debugging but shouldn't trigger PyTorch specifics.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-28",
+      "scenario": "A management consultant wants to turn their proprietary pitch deck audit methodology into an agent capability with bundled checklists and scoring scripts.",
+      "user_query": "I have a proprietary 15-point pitch deck assessment methodology that uses a scoring spreadsheet and specific slide layout criteria. I want to build this into a structured AI workflow with all assets and instructions bundled together.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "skill-creator-29",
+      "scenario": "A systems administrator wants to measure the token overhead and accuracy improvement of their server log analysis skill compared to vanilla Claude.",
+      "user_query": "Run a baseline benchmark for sysadmin-log-parser against raw Claude on 5 corrupted nginx log files. I want to see if the skill's regex scripts actually justify the extra token usage.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "skill-creator-30",
+      "scenario": "An executive assistant wants to fix their meeting summarizer instructions because action items are missing due dates in half the test runs.",
+      "user_query": "My meeting-notes assistant keeps dropping due dates and owners from the action items list. Can we set up a few test transcripts, run an evaluation loop, and refine the prompt until it reliably extracts all assignment metadata?",
+      "explicitness": "implicit"
+    }
+  ]
+}

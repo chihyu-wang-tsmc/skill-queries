@@ -1,0 +1,188 @@
+{
+  "skill": "frontend-design",
+  "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:31:59+00:00",
+  "scenarios": [
+    {
+      "id": "frontend-design-01",
+      "scenario": "A boutique archivist building an inventory browser for rare 18th-century manuscripts wants a custom web layout that feels authentic to vintage print without falling into cliché digital templates.",
+      "user_query": "I'm building an inventory browser for my rare 18th-century manuscript collection in React. Every template I find looks like a generic tech dashboard or a fake parchment theme. Can you help me design the visual system, typography scale, and layout structure so it feels authentic to the archival domain?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-02",
+      "scenario": "An IoT engineer is building an operator interface for heavy construction crane sensors and needs UI styling that is rugged, high-contrast, and hyper-functional.",
+      "user_query": "Here's my telemetry monitor for tower crane operators. Right now it just looks like a generic rounded-card SaaS app with soft shadows, which feels completely wrong for a dusty construction cab. How should we overhaul the visual layout, colors, and typography to fit heavy machinery monitoring?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-03",
+      "scenario": "A frontend developer is tasked with establishing the visual identity and token system for a bespoke tailor's custom fitting portal.",
+      "user_query": "I need a distinctive frontend design plan for a luxury Savile Row tailor's custom fitting portal. Please define a 4-6 color palette token system, type pairing, and hero section wireframe that avoids standard modern minimal clichés.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-04",
+      "scenario": "An open-source maintainer wants their new terminal debugger landing page to look like a serious systems tool instead of using standard AI-generated dark mode tropes.",
+      "user_query": "Check out this draft landing page for our memory leak profiler. It's got the usual dark background with neon green accents and cards with arrows at the end of every link. Make it look like a serious, unique systems engineering tool instead of template soup.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-05",
+      "scenario": "An edtech product designer needs to establish visual principles and layout tokens for a micro-learning physics web toy designed for elementary school children.",
+      "user_query": "We're building an interactive web toy where 8-year-olds experiment with gravity simulations. Can you create a design plan—including color tokens, typography rules, and UI layout concepts—tailored specifically to this age group without relying on tacky cartoon tropes?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-06",
+      "scenario": "A product manager wants to overhaul the confusing error messaging and blank slate states in their logistics portal so they are actionable and plain-spoken.",
+      "user_query": "Our freight dispatch app feels robotic and sterile when things fail. Take a look at these blank slate and failure screens: 'Error 504: Gateway Timeout' and 'No records found'. Can you rewrite the copy and restructure these empty views to guide users clearly on what to do next?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-07",
+      "scenario": "An indie publisher wants to fix the typography and reading experience across long-form essays to adhere to classical typographic scale and line lengths.",
+      "user_query": "Our essay reading layout has lines stretching over 120 characters and weird bolded words scattered across section titles. Can you redesign the typographic system, line-heights, and headline treatments following typographic best practices?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-08",
+      "scenario": "A bioinformatician built an interactive genomic variant viewer, but the UI is cluttered with numbered steps and unnecessary labels that confuse researchers.",
+      "user_query": "Researchers are complaining that this genomic variant explorer is noisy. It has '01 / 02 / 03' numbered cards for non-sequential data and all-caps labels everywhere. Help me declutter the visual hierarchy and design a restrained, functional layout.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-09",
+      "scenario": "A web developer is coding an e-commerce storefront for a boutique vinyl imprint and needs an opinionated visual direction.",
+      "user_query": "I'm coding a shop for a Berlin-based industrial techno vinyl label in HTML/Tailwind. I need an opinionated frontend design system: palette tokens, headline type style, and a hero layout that breaks away from typical Shopify stores.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-10",
+      "scenario": "A quantitative developer needs to redesign their algorithmic execution widget so visual hierarchy communicates urgency without decorative distractions.",
+      "user_query": "Our trading execution interface has too much decorative fluff—gradient borders, entrance animations, and identical box shadows on every widget. I need a tight, high-density visual design with a purposeful color palette for live risk monitoring.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-11",
+      "scenario": "A local artisan collective wants a warm, tactile, earthy website design brief that avoids generic corporate startup aesthetics.",
+      "user_query": "I'm setting up the booking page for our ceramics workshop. Can you help me develop a frontend design brief with a distinct color palette, typography, and ASCII layout wireframe that feels tactile and artisanal rather than corporate?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-12",
+      "scenario": "A hobbyist developer building an edible plant mapping tool wants to refine the UI controls and cards to feel cohesive with the outdoor subject matter.",
+      "user_query": "Here's the UI for my wild fruit tree mapping web app. The controls feel like a generic Google Maps clone. How can I reshape the visual language, typography, and action buttons so the interface feels grounded in foraging and nature?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-13",
+      "scenario": "A web designer is putting together a site for an architectural studio and wants to ensure the layout reflects structural elegance and intentional spacing.",
+      "user_query": "I need a design critique and styling plan for this architecture studio's portfolio site. Please propose a typographic hierarchy, tokenized color scheme, and an asymmetric layout structure that emphasizes negative space and architectural discipline.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-14",
+      "scenario": "A solo founder's SaaS billing and user profile screens use confusing technical jargon and generic CTA buttons that confuse non-technical users.",
+      "user_query": "My account settings page says things like 'Submit Webhook Config Mutation' and 'Modify Subscription Entity'. The buttons all say 'Submit' or 'Click Here'. Help me fix the UI copy and visual layout so normal humans can actually navigate their billing.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-15",
+      "scenario": "A botanical curator wants a public web archive for heritage heirloom seeds with deliberate typographic and visual choices.",
+      "user_query": "We are building an open access heirloom seed index. Can you outline the frontend design specs—specifically the typography scale, 4-6 hex color system, and hero section concept—to give this archive a distinctive botanical identity?",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-16",
+      "scenario": "A security engineer is redesigning an incident triage dashboard that currently suffers from over-animation and low-contrast palettes.",
+      "user_query": "Whenever an incident fires, our dashboard has sliding card animations and subtle gray text that makes reading alert logs difficult under pressure. How should we overhaul this visual hierarchy and motion design for high-stakes operational clarity?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-17",
+      "scenario": "A film festival organizer needs a schedule grid and ticket selector that channels cinematic aesthetics without falling into the black-and-gold cliché.",
+      "user_query": "Can you provide frontend design guidance for an indie documentary festival website? I need a layout concept, type pairing, and token system that feels bold and cinematic without relying on the cliché gold-on-black film festival tropes.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-18",
+      "scenario": "A frontend dev is building a single-origin bean subscription builder and wants the interactive moments to feel deliberate rather than noisy.",
+      "user_query": "I'm styling the coffee grind and roast selector component. Right now every single card has a bouncy hover effect and a drop shadow. How should I rethink the micro-interactions, layout, and visual feedback so the selection flow feels intentional and refined?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-19",
+      "scenario": "A marine research institute needs a distinctive public web log for an upcoming deep-sea submersible dive series.",
+      "user_query": "We're launching a public dive tracking page for our oceanographic research vessel. Help me create a frontend design plan with ASCII wireframes, color tokens, and typographic choices rooted in maritime cartography and bathymetry.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-20",
+      "scenario": "An app creator wants to simplify their daily reflection UI, removing distracting template chrome, middle dots, and excessive tags.",
+      "user_query": "My daily journaling web app feels too loud—it has all-caps tags, middle-dot metadata everywhere, and three different accent colors. Can you help me strip back the visual noise, establish a quiet typographic hierarchy, and refine the layout?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-21",
+      "scenario": "A direct importer wants a minimalist, culturally nuanced visual design for their seasonal single-cultivar matcha release page.",
+      "user_query": "I need a tailored frontend design token set and layout wireframe for our seasonal ceremonial matcha drop. Give me a 4-6 hex palette, type selection, and visual design principles that honor traditional Japanese aesthetics while staying modern.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-22",
+      "scenario": "A devtools startup wants to make their product changelog engaging to read without turning it into a generic marketing blog or raw commit dump.",
+      "user_query": "Our changelog page is currently just a raw dump of GitHub commits inside generic bootstrap cards. How can we redesign this page's visual structure, typography, and microcopy so engineering leads actually enjoy reading our weekly updates?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-23",
+      "scenario": "An audio programmer is building a patch-sharing platform and wants the UI to reflect Eurorack hardware without becoming a skeuomorphic mess.",
+      "user_query": "Can you help me design the frontend visual identity and UI layout for an online Eurorack patch repository? I need a concrete color palette, font system, and layout strategy that feels like hardware engineering without cheesy skeuomorphism.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-24",
+      "scenario": "A civic hacker is building a real-time transit delay dashboard and needs to eliminate visual clutter so commuters can read status at a glance on mobile.",
+      "user_query": "Commuters are checking our subway delay tool while rushing on platforms. The current UI has cards with soft shadows, tiny gray timestamps, and vague 'Status update' headers. How can I redesign the layout and visual hierarchy for immediate legibility?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-25",
+      "scenario": "A master lithographer is setting up an exhibition portal and wants layout principles and typography rooted in traditional printmaking.",
+      "user_query": "I'm coding the website for our traditional printmaking press. Please create a frontend design specification: palette tokens, typography rules respecting ink-on-paper traditions, and an ASCII wireframe for our portfolio hero.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-26",
+      "scenario": "A software engineer built an AWS bill analyzer, but it looks identical to every generic AI-generated cream-and-terracotta dashboard.",
+      "user_query": "My AWS cost monitoring app has the exact AI look: warm cream background, terracotta buttons, high-contrast serif headlines, and cards with arrows on every link. Critique this design and help me rebuild a sharp, distinctive visual system for cloud engineers.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-27",
+      "scenario": "A motorcycle builder needs a bespoke work-in-progress showcase site for custom café racers.",
+      "user_query": "I want a custom frontend design system for our custom motorcycle build gallery. Give me a 4 to 6 color token palette, font pairings, and a layout concept that reflects mid-century mechanical craftsmanship.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-28",
+      "scenario": "A university conference coordinator wants to make their call-for-papers page look dignified and clean rather than using generic conference template widgets.",
+      "user_query": "Our philosophy symposium submission page looks like a standard eventbrite clone with generic stock icons and bouncy form buttons. How do we rework the typography, spacing, and button microcopy so it feels serious and academic?",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "frontend-design-29",
+      "scenario": "An astronomy enthusiast is designing a portal for eclipse photographers and needs a visual identity reflecting astronomical phenomena.",
+      "user_query": "We are developing a tracking and photography site for upcoming total solar eclipses. Please draft a frontend design plan—including color tokens, typography scales, and a hero layout idea—that creates a dramatic, atmospheric visual feel.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "frontend-design-30",
+      "scenario": "A sustainable grocery store wants to refine their bulk-bin stock levels page so customers understand availability immediately.",
+      "user_query": "Here is our bulk grain and spice inventory table. Right now it's cluttered with colored badges, vague icons, and 'Item Status: Null' when things run out. How should we redesign the interface layout, empty states, and visual cues for quick grocery scanning?",
+      "explicitness": "implicit"
+    }
+  ]
+}

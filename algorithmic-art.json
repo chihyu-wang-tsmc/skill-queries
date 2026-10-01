@@ -1,0 +1,188 @@
+{
+  "skill": "algorithmic-art",
+  "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
+  "model": "gemini-3.7-flash",
+  "generated_at": "2026-10-01T13:31:24+00:00",
+  "scenarios": [
+    {
+      "id": "algorithmic-art-01",
+      "scenario": "A creative director at a digital branding agency is pitching a dynamic visual identity system for a fintech client and needs an interactive code-driven artwork prototype.",
+      "user_query": "I need an interactive generative art piece built in p5.js based on flow fields and vector forces. It should include seed navigation so I can cycle through reproducible variations, plus sliders for particle speed, field resolution, and trail opacity.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-02",
+      "scenario": "A graphic designer is creating a series of limited-edition art prints and wants a computational tool that generates organic, branching coral structures with reproducible variations.",
+      "user_query": "Can you build a self-contained web tool that generates intricate, organic branching structures reminiscent of deep-sea corals? I want sliders to tweak the recursion depth, branch angles, and randomness, plus a way to step through numerical seeds to find compositions I like for printing.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-03",
+      "scenario": "A generative artist wants to formalize a new computational movement and create an interactive viewer to explore wave interference patterns.",
+      "user_query": "Write an algorithmic philosophy manifesto called 'Quantum Resonance' and then implement it as an interactive p5.js artifact. Use harmonic sine wave interference across a grid with controls for frequency ratios, damping, and seed stepping.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-04",
+      "scenario": "An indie record label owner needs custom generative album covers that evoke swirling cosmic dust and gravitational pull.",
+      "user_query": "I need a visual generator that simulates thousands of fine particles swirling around invisible gravitational attractors to make atmospheric galaxy-like clouds. It should be an interactive HTML page where I can adjust gravity strength, particle lifespan, and click through different random seeds until I get the perfect album cover.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-05",
+      "scenario": "A creative technologist preparing a submission for an on-chain generative art platform needs a seeded p5.js script with dedicated parameter controls.",
+      "user_query": "Create an algorithmic art project using p5.js that does stochastic crystallization via randomized Voronoi cell relaxation. Make sure it uses seeded randomness (noiseSeed/randomSeed) and has a sidebar to tweak cell count, relaxation steps, and color palette.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-06",
+      "scenario": "An architectural designer needs to explore algorithmic facade tiling patterns based on mathematical tessellations and organic cellular growth.",
+      "user_query": "I want an interactive browser-based tool to generate organic geometric tiling patterns. I need to be able to change cell density, edge rounding, and deformation variance in real time, and easily jump between specific seed numbers to save specific iterations for facade panels.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-07",
+      "scenario": "A computer science educator is building an interactive demonstration for a digital art workshop explaining emergent behavior.",
+      "user_query": "Can you make an interactive p5.js sketch demonstrating boids/flocking behavior creating generative line trails? Please include an algorithmic philosophy write-up explaining the computational aesthetics, along with UI controls to adjust cohesion, separation, and alignment.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-08",
+      "scenario": "A book cover designer wants to generate unique mathematical moiré and linework patterns for a science-fiction trilogy.",
+      "user_query": "I'm looking for a tool that draws layered mathematical wave contours and harmonic moiré interference patterns. I need interactive sliders for line density, oscillation frequency, and line thickness, plus a button to export high-res images and a seed counter so I can reproduce exact designs later.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-09",
+      "scenario": "A digital artist wants an aesthetic exploration of multi-octave Perlin noise landscapes represented as fine topographical lines.",
+      "user_query": "Please create an algorithmic art piece in p5.js that renders multi-layered Perlin noise contour lines with seeded randomness. Package it as an interactive single-page artifact with sliders for noise scale, contour spacing, and color gradient pickers.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-10",
+      "scenario": "A luxury silk scarf designer needs an interactive system that generates intricate, generative geometric weaves that change with mathematical seeds.",
+      "user_query": "I need a generative system that creates elegant, symmetrical mandalas formed by nested logarithmic spirals and subtle chaotic perturbations. Give me a clean viewer where I can tune spiral tightness, petal symmetry count, and step through seeds 1 to 50.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-11",
+      "scenario": "A web designer wants to create a signature interactive generative backdrop for a tech company's annual conference website.",
+      "user_query": "Build a p5.js generative artwork showing differential growth curves. I need an interactive artifact with controls for node attraction, split threshold, and growth rate, fully reproducible via seed inputs.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-12",
+      "scenario": "A museum exhibition curator wants a self-contained interactive exhibit display simulating slime mold network emergence.",
+      "user_query": "We want an interactive installation piece that simulates Physarum polycephalum transport networks—particles leaving chemo-attractant trails that form organic vascular webs. It should be a standalone HTML file where visitors or staff can adjust sensor angles, decay rates, and randomize the seed.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-13",
+      "scenario": "A student in a computational design course needs to write a generative art manifesto and implement a corresponding sketch.",
+      "user_query": "I need help with a computational art assignment: write a 4-paragraph algorithmic philosophy about 'Controlled Turbulence', then write the complete p5.js generative sketch implementing it using vector flow fields, seeded randomness, and parameter sliders.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-14",
+      "scenario": "A game developer is looking for a way to generate infinite distinct stylized planetary surface texture maps via code.",
+      "user_query": "I need an interactive tool to generate stylized celestial surface patterns using layered noise and reaction-diffusion equations. I want to adjust feed/kill rates, noise distortion, and jump to specific seed IDs so my team can review different procedural biomes.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-15",
+      "scenario": "A creative coder exploring strange attractors wants an interactive canvas with Anthropic branding and seed exploration.",
+      "user_query": "Create an algorithmic art interactive artifact using p5.js simulating a Clifford or De Jong strange attractor. Include sliders for the 4 mathematical coefficients, point density, and color blending, along with seed navigation.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-16",
+      "scenario": "A packaging designer for a boutique distillery needs 100 uniquely generated label variations based on seed numbers.",
+      "user_query": "I need a generative visual system that creates intricate, fine-line guilloche patterns similar to antique banknote engravings. It should let me dial in frequency modulation and line count, and step through seeds 1 to 100 so each bottle gets a unique, reproducible engraving.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-17",
+      "scenario": "A generative NFT creator wants to test parameter bounds and color palettes on a circle-packing algorithm.",
+      "user_query": "Build a p5.js algorithmic art piece that performs non-overlapping circle packing inside complex mathematical boundaries. Provide controls for max radius, attempt count, and padding, with full seed navigation support.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-18",
+      "scenario": "A wellness app developer wants to design a meditative, continually evolving visual of breathing harmonic rings.",
+      "user_query": "Can you design a code-generated interactive visual where concentric rings gently deform and undulate using smooth harmonic oscillation? I want to be able to adjust wave count, breathing speed, and deform amplitude, plus save specific configurations by seed number.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-19",
+      "scenario": "An artist exploring L-systems wants an interactive tool to explore fractal botanical forms.",
+      "user_query": "I want an algorithmic art piece in p5.js based on stochastic L-systems to create generative tree skeletons. Include an algorithmic philosophy section, plus interactive controls for branching angle, length decay, and seed iteration.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-20",
+      "scenario": "A textile studio wants an algorithmic engine to produce generative geometric knitwear patterns with controlled randomness.",
+      "user_query": "I'm looking for an interactive generator that arranges geometric primitives (triangles, quarter-circles, arcs) onto an evolving grid following probabilistic adjacency rules. I need sliders for grid resolution and symmetry constraints, plus next/previous seed buttons.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-21",
+      "scenario": "A creative developer wants to implement an algorithmic philosophy called 'Stochastic Fluidity' with p5.js particle systems.",
+      "user_query": "Draft the algorithmic philosophy for 'Stochastic Fluidity' and generate the full p5.js HTML artifact. Use particles pushed by curl noise with trails that accumulate into fluid density maps, featuring parameter sliders for curl scale, particle count, and color palette.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-22",
+      "scenario": "A festival organizer wants to generate unique procedural badge designs for 500 attendees based on attendee ticket numbers.",
+      "user_query": "I need an interactive visual tool that transforms an input number into a distinct generative geometric crest made of interlocking polygon shards and gradient ribbons. It must be completely reproducible so entering the same ticket ID always draws the exact same crest.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-23",
+      "scenario": "A frontend engineer wants to create a gallery-quality algorithmic art generator with parameter controls for their portfolio.",
+      "user_query": "Create a gallery-grade p5.js algorithmic art viewer featuring a Delaunay triangulation network that morphs across vector force fields. Please include parameter controls for vertex count, connection radius, and seed stepping.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-24",
+      "scenario": "A sound artist wants an interactive visual generator that creates visual equivalents of polyrhythms and harmonic overtones.",
+      "user_query": "I want a computational visualizer that maps mathematical Lissajous curves and Chladni plate resonance figures into glowing line traces. I need sliders for frequency ratios X/Y, phase offset, and line decay, with seed jumping so I can match visuals to my music tracks.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-25",
+      "scenario": "A generative artist is looking to develop a flow field sketch with high aesthetic polish and downloadable outputs.",
+      "user_query": "Generate an algorithmic art sketch using p5.js based on multi-octave flow fields with 20,000 particle trails. Provide an interactive UI with sliders for noise frequency, step size, and lifespan, plus seed navigation and a PNG download button.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-26",
+      "scenario": "A motion designer needs an interactive tool to generate abstract smoky turbulence trails for a title sequence concept.",
+      "user_query": "I need an interactive web artifact that simulates ethereal smoke ribbons floating through non-uniform force vectors. It should allow me to tune turbulent intensity, ribbon width, and fade speed, and let me explore variations by cycling through seeds.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-27",
+      "scenario": "A computational art enthusiast wants an interactive implementation of cellular automata with smooth aesthetic rendering.",
+      "user_query": "Can you build a p5.js generative art piece using continuous cellular automata (like Lenia or SmoothLife)? Write the algorithmic philosophy first, then give me the self-contained HTML with parameter sliders for kernel radius, growth center, and seed controls.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-28",
+      "scenario": "A printmaker wants to generate digital woodcut-style line hatching patterns using mathematical gradients.",
+      "user_query": "I need a generator that converts mathematical vector fields into parallel hatching lines with varying line weights, resembling vintage woodcut prints. I need controls for line density, angle variance, and seed selection to test different organic flow directions.",
+      "explicitness": "implicit"
+    },
+    {
+      "id": "algorithmic-art-29",
+      "scenario": "A visual arts professor wants a bespoke p5.js interactive artifact demonstrating the concept of deterministic chaos.",
+      "user_query": "Create an interactive p5.js generative art artifact demonstrating deterministic chaos through double pendulum trail projections. Include parameter controls for rod lengths, mass ratios, and dampening, along with full seed reproducibility controls.",
+      "explicitness": "explicit"
+    },
+    {
+      "id": "algorithmic-art-30",
+      "scenario": "A poster designer needs to create a series of abstract algorithmic posters inspired by quantum field theory.",
+      "user_query": "I want an interactive computational canvas that creates abstract energy field visualizations—dense clusters of tiny vibrating point charges that emit faint vector lines when they interact. I need sliders to adjust charge density and repulsion radius, plus seed stepping to discover balanced compositions.",
+      "explicitness": "implicit"
+    }
+  ]
+}
